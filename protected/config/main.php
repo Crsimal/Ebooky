@@ -7,7 +7,8 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'My Web Application',
+	'name'=>'Ebooky',
+        'defaultController'=>'landing',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -51,12 +52,22 @@ return array(
 		*/
 
 		// database settings are configured in database.php
-		'db'=>require(dirname(__FILE__).'/database.php'),
+		//'db'=>require(dirname(__FILE__).'/database.php'),
+            
+                'db'=>array(
+                    'connectionString' => 'mysql:host=localhost;dbname=ebooky',
+                    'emulatePrepare' => true,
+                    'username' => 'root',
+                    'password' => '',
+                    'charset' => 'utf8',
+                ),
 
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>YII_DEBUG ? null : 'site/error',
 		),
+            
+                
 
 		'log'=>array(
 			'class'=>'CLogRouter',
@@ -82,4 +93,16 @@ return array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
 	),
+    
+         'import'=>array(
+            'application.models.*',
+            'application.components.*',
+          ),
+ 
+          'modules'=>array(
+            'gii'=>array(
+            'class'=>'system.gii.GiiModule',
+            'password'=>'ebooky2017',
+           ),
+    ),
 );

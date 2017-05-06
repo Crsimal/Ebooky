@@ -1,0 +1,68 @@
+2017/05/07 00:10:19 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ebooky.tbl_usr' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_usr`.
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/07 00:12:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "parrafos".' in F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('parrafos')
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ebooky/index.php?r=parrafos
+---
+2017/05/07 00:20:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "landingController".' in F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Ebooky/
+---
+2017/05/07 00:20:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "landing".' in F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Ebooky/
+---
+2017/05/07 00:21:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "landing".' in F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Ebooky/
+---
+2017/05/07 01:14:28 [error] [php] Use of undefined constant php - assumed 'php' (F:\Xampp\htdocs\Ebooky\protected\views\landing\index.php:6)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): LandingController->renderFile()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): LandingController->renderPartial()
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\LandingController.php(32): LandingController->render()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): LandingController->actionIndex()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): LandingController->runAction()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): LandingController->runActionWithFilters()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): LandingController->run()
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/
+in F:\Xampp\htdocs\Ebooky\protected\views\landing\index.php (6)
+in F:\Xampp\htdocs\Ebooky\protected\controllers\LandingController.php (32)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/07 01:15:27 [error] [php] Use of undefined constant php - assumed 'php' (F:\Xampp\htdocs\Ebooky\protected\views\landing\index.php:6)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): LandingController->renderFile()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): LandingController->renderPartial()
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\LandingController.php(32): LandingController->render()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): LandingController->actionIndex()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): LandingController->runAction()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): LandingController->runActionWithFilters()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): LandingController->run()
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/
+in F:\Xampp\htdocs\Ebooky\protected\views\landing\index.php (6)
+in F:\Xampp\htdocs\Ebooky\protected\controllers\LandingController.php (32)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
