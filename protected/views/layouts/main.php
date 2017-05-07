@@ -25,13 +25,13 @@
             <div id="">
                 <nav>
                     <div class="nav-wrapper z-depth-5 blue lighten-3">
-                        <a href="#!" class="brand-logo center">Ebooky</a>
+                        <a href="#!" class="brand-logo center"><img src="<?php echo Yii::app()->baseUrl.'/images';?>/logo.png" alt="" id="logo"/></a>
                         <ul class="left hide-on-med-and-down">
-                            <li><a href="sass.html">Inicio</a></li>
-                            <li><a href="badges.html">Leer</a></li>
-                            <li><a href="badges.html">Votar</a></li>
-                            <li><a href="badges.html">Escribir</a></li>
-                            <li><a href="badges.html">About</a></li>
+                            <li><a href="index.php?r=landing/index">Inicio</a></li>
+                            <li><a href="index.php?r=acciones/leer">Leer</a></li>
+                            <li><a href="index.php?r=acciones/votar">Votar</a></li>
+                            <li><a href="index.php?r=acciones/escribir">Escribir</a></li>
+                            <li><a href="index.php?r=about/index">About</a></li>
                         </ul>
                     </div>
                 </nav>

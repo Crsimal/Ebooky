@@ -66,3 +66,22 @@ REQUEST_URI=/Ebooky/
 in F:\Xampp\htdocs\Ebooky\protected\views\landing\index.php (6)
 in F:\Xampp\htdocs\Ebooky\protected\controllers\LandingController.php (32)
 in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/07 04:00:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php:483
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(270): CController->missingAction('')
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('')
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Ebooky/
+---
+2017/05/07 04:03:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "about/index".' in F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('about/index')
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Ebooky/index.php?r=about/index
+HTTP_REFERER=http://localhost/Ebooky/index.php?r=acciones/escribir
+---
