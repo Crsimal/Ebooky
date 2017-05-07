@@ -33,6 +33,10 @@
                             <li><a href="index.php?r=acciones/escribir">Escribir</a></li>
                             <li><a href="index.php?r=about/index">About</a></li>
                         </ul>
+                        
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="index.php?r=users/registro" class="waves-effect waves-light btn blue z-dept-5">Registrarse</a></li>
+                        </ul>
                     </div>
                 </nav>
             </div>
