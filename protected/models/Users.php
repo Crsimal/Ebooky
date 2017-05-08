@@ -11,6 +11,8 @@
  * @property string $city
  * @property string $email
  * @property string $nickname
+ * @property integer $ha_escrito
+ * @property integer $ha_votado
  */
 class Users extends CActiveRecord
 {
@@ -30,15 +32,15 @@ class Users extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id_usuario, name, surname, password, city, email', 'required'),
-			array('id_usuario', 'numerical', 'integerOnly'=>true),
+			array('name, surname, password, city, email', 'required'),
+			array('id_usuario, ha_escrito, ha_votado', 'numerical', 'integerOnly'=>true),
 			array('name, surname', 'length', 'max'=>18),
 			array('password, city', 'length', 'max'=>20),
 			array('email', 'length', 'max'=>40),
 			array('nickname', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id_usuario, name, surname, password, city, email, nickname', 'safe', 'on'=>'search'),
+			array('id_usuario, name, surname, password, city, email, nickname, ha_escrito, ha_votado', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -66,6 +68,8 @@ class Users extends CActiveRecord
 			'city' => 'City',
 			'email' => 'Email',
 			'nickname' => 'Nickname',
+			'ha_escrito' => 'Ha Escrito',
+			'ha_votado' => 'Ha Votado',
 		);
 	}
 
@@ -94,6 +98,8 @@ class Users extends CActiveRecord
 		$criteria->compare('city',$this->city,true);
 		$criteria->compare('email',$this->email,true);
 		$criteria->compare('nickname',$this->nickname,true);
+		$criteria->compare('ha_escrito',$this->ha_escrito);
+		$criteria->compare('ha_votado',$this->ha_votado);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
