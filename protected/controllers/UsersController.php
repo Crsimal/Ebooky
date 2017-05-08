@@ -30,7 +30,18 @@ class UsersController extends Controller
     	if(isset($_POST['Users']))
     	{
         	$model->attributes=$_POST['Users'];
-                $model->id_usuario="9";
+                
+                $criteria=new CDbCriteria;
+                $criteria->select='max(id_usuario) AS id_usuario';
+                $row = $model->model()->find($criteria);
+                $somevariable = $row['id_usuario'];
+                $somevariable=$somevariable + 1;
+                
+                $model->id_usuario=$somevariable;
+                $model->ha_escrito=0;
+                $model->ha_votado=0;
+                
+
         	if($model->validate())
         	{
             	if($model->save())
