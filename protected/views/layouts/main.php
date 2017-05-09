@@ -35,7 +35,15 @@
                             <li><a href="index.php?r=about/index">About</a></li>
                         </ul>
 
-                        <ul class="right hide-on-med-and-down">
+                        <ul class="right hide-on-med-and-down opcionesUsuario">                         
+                            <?php 
+                            if (Yii::app()->user->isGuest){
+                                echo "<li><a href='index.php?r=site/login' class='waves-effect waves-light btn blue z-dept-5'>Conectarse</a></li>";
+                            }else{
+                                echo "<li>Conectado como <strong>" . Yii::app()->user->name . "</strong></li>";
+                                echo "<li><a href='index.php?r=site/logout' class='waves-effect waves-light btn blue z-dept-5'>Desconectarse</a></li>";
+                            }                      
+                            ?> 
                             <li><a href="index.php?r=users/registro" class="waves-effect waves-light btn blue z-dept-5">Registrarse</a></li>
                         </ul>
                         <ul class="side-nav" id="mobile-demo">

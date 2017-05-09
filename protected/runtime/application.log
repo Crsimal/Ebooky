@@ -375,3 +375,21 @@ Stack trace:
 REQUEST_URI=/Ebooky/index.php?r=users/registro
 HTTP_REFERER=http://localhost/Ebooky/index.php?r=users/registro
 ---
+2017/05/09 03:51:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php:483
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(270): CController->missingAction('login')
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('login')
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('users/login')
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Ebooky/index.php?r=users/login
+---
+2017/05/09 03:51:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "usite/login".' in F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('usite/login')
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Ebooky/index.php?r=usite/login
+---
