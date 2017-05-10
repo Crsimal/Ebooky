@@ -898,3 +898,24 @@ REQUEST_URI=/Ebooky/index.php?r=acciones/votar
 in F:\Xampp\htdocs\Ebooky\protected\views\acciones\votar.php (21)
 in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (91)
 in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/10 04:15:46 [error] [exception.CException] exception 'CException' with message 'Property "Parrafos.id" is not defined.' in F:\Xampp\yii-1.1.17.467ff50\framework\base\CComponent.php:130
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 F:\Xampp\htdocs\Ebooky\protected\views\acciones\votar.php(28): CActiveRecord->__get('id')
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CBaseController.php(126): require('F:\\Xampp\\htdocs...')
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\\Xampp\\htdocs...', Array, true)
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): CBaseController->renderFile('F:\\Xampp\\htdocs...', Array, true)
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): CController->renderPartial('votar', Array, true)
+#6 F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php(91): CController->render('votar', Array)
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): AccionesController->actionVotar()
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('votar')
+#12 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('acciones/votar')
+#13 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Ebooky/index.php?r=acciones/votar
+HTTP_REFERER=http://localhost/Ebooky/
+---

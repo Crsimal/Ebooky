@@ -81,6 +81,16 @@ class AccionesController extends Controller {
         
         $model = new Parrafos;
         
+        if(isset($_POST['votado'])){
+            echo $_POST['votado'];
+            $parrafo = $model->findByAttributes(array("id_parrafo" => $_POST['votado']));
+            $sumaVoto = $parrafo->votos + 1;
+            echo $sumaVoto;
+            $parrafo->votos = $sumaVoto;
+            $parrafo->save();
+            
+        }
+        
         if (Yii::app()->user->isGuest) {
             $this->render('accesoRestringido');
         } else {
