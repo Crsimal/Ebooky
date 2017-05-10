@@ -1,21 +1,20 @@
 <?php
 
 /**
- * This is the model class for table "parrafos".
+ * This is the model class for table "historia".
  *
- * The followings are the available columns in table 'parrafos':
+ * The followings are the available columns in table 'historia':
+ * @property integer $id_posicion_parrafo
  * @property integer $id_parrafo
- * @property string $contenido
- * @property integer $id_usuario
  */
-class Parrafos extends CActiveRecord
+class Historia extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'parrafos';
+		return 'historia';
 	}
 
 	/**
@@ -26,12 +25,11 @@ class Parrafos extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id_parrafo, contenido, id_usuario', 'required'),
-			array('id_parrafo, id_usuario, votos', 'numerical', 'integerOnly'=>true),
-			array('contenido', 'length', 'max'=>3000),
+			array('id_posicion_parrafo, id_parrafo', 'required'),
+			array('id_posicion_parrafo, id_parrafo', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id_parrafo, contenido, id_usuario', 'safe', 'on'=>'search'),
+			array('id_posicion_parrafo, id_parrafo', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -40,11 +38,9 @@ class Parrafos extends CActiveRecord
 	 */
 	public function relations()
 	{
-		// NOTE: you may need to adjust the relation name and the related
-		// class name for the relations automatically generated below.
+	
 		return array(
-                    
-                     'id_parrafo'=>array(self::HAS_MANY, 'historia', 'id_parrafo'),
+                     'relacion'=>array(self::BELONGS_TO, 'parrafos', 'id_parrafo'),
 		);
 	}
 
@@ -54,12 +50,8 @@ class Parrafos extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
+			'id_posicion_parrafo' => 'Id Posicion Parrafo',
 			'id_parrafo' => 'Id Parrafo',
-			'contenido' => 'Contenido',
-			'id_usuario' => 'Id Usuario',
-                        'votos' => 'votos',
-                        'votacionActual' => 'votacionActual',
-                        'publicado' => 'publicado',
 		);
 	}
 
@@ -81,9 +73,8 @@ class Parrafos extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
+		$criteria->compare('id_posicion_parrafo',$this->id_posicion_parrafo);
 		$criteria->compare('id_parrafo',$this->id_parrafo);
-		$criteria->compare('contenido',$this->contenido,true);
-		$criteria->compare('id_usuario',$this->id_usuario);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -94,7 +85,7 @@ class Parrafos extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Parrafos the static model class
+	 * @return Historia the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

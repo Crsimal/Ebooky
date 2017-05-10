@@ -25,9 +25,13 @@ class AccionesController extends Controller {
      * when an action is not explicitly requested by users.
      */
     public function actionLeer() {
-        // renders the view file 'protected/views/site/index.php'
-        // using the default layout 'protected/views/layouts/main.php'
-        $this->render('leer');
+      
+        $model = new Historia;
+        
+        
+        
+        
+        $this->render('leer', array('model'=>$model));
     }
 
     public function actionEscribir() {
@@ -56,6 +60,11 @@ class AccionesController extends Controller {
                 $model->id_parrafo = $somevariable;
                 $model->votos = 0;
                 $model->votacionActual = 1;
+                $model->publicado = 1;
+
+                function functionName($param) {
+                    
+                }
                 $model->save();
                 /*
                   $model->attributes = $_POST['Users'];
@@ -82,10 +91,8 @@ class AccionesController extends Controller {
         $model = new Parrafos;
         
         if(isset($_POST['votado'])){
-            echo $_POST['votado'];
             $parrafo = $model->findByAttributes(array("id_parrafo" => $_POST['votado']));
             $sumaVoto = $parrafo->votos + 1;
-            echo $sumaVoto;
             $parrafo->votos = $sumaVoto;
             $parrafo->save();
             
