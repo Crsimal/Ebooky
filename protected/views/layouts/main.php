@@ -38,10 +38,10 @@
                         <ul class="right hide-on-med-and-down opcionesUsuario">                         
                             <?php 
                             if (Yii::app()->user->isGuest){
-                                echo "<li><a href='index.php?r=site/login' class='waves-effect waves-light btn blue z-dept-5'>Conectarse</a></li>";
+                                echo "<li><a href='index.php?r=users/login' class='waves-effect waves-light btn blue z-dept-5'>Conectarse</a></li>";
                             }else{
                                 echo "<li>Conectado como <strong>" . Yii::app()->user->name . "</strong></li>";
-                                echo "<li><a href='index.php?r=site/logout' class='waves-effect waves-light btn blue z-dept-5'>Desconectarse</a></li>";
+                                echo "<li><a href='index.php?r=users/logout' class='waves-effect waves-light btn blue z-dept-5'>Desconectarse</a></li>";
                             }                      
                             ?> 
                             <li><a href="index.php?r=users/registro" class="waves-effect waves-light btn blue z-dept-5">Registrarse</a></li>
@@ -78,5 +78,14 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 
 <script type="text/javascript" src="<?php echo Yii::app()->baseUrl.'/js/main.js';?>"></script>
+<?php 
+/*
+$usuarios = new Users();
+
+$modelo = $usuarios->findByAttributes(array("nickname"=>Yii::app()->user->name));
+
+var_dump($modelo->id_usuario);
+*/
+?>
 </body>
 </html>
