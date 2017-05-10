@@ -27,7 +27,7 @@ class Parrafos extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('id_parrafo, contenido, id_usuario', 'required'),
-			array('id_parrafo, id_usuario', 'numerical', 'integerOnly'=>true),
+			array('id_parrafo, id_usuario, votos', 'numerical', 'integerOnly'=>true),
 			array('contenido', 'length', 'max'=>3000),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
@@ -55,6 +55,8 @@ class Parrafos extends CActiveRecord
 			'id_parrafo' => 'Id Parrafo',
 			'contenido' => 'Contenido',
 			'id_usuario' => 'Id Usuario',
+                        'votos' => 'votos',
+                        'votacionActual' => 'votacionActual',
 		);
 	}
 

@@ -54,6 +54,8 @@ class AccionesController extends Controller {
                 $model->contenido = $_POST['parrafo'];
                 $model->id_usuario = $modelo->id_usuario;
                 $model->id_parrafo = $somevariable;
+                $model->votos = 0;
+                $model->votacionActual = 1;
                 $model->save();
                 /*
                   $model->attributes = $_POST['Users'];
@@ -76,13 +78,17 @@ class AccionesController extends Controller {
     }
 
     public function actionVotar() {
+        
+        $model = new Parrafos;
+        
         if (Yii::app()->user->isGuest) {
             $this->render('accesoRestringido');
         } else {
-            
+            $usuarios = new Users();
+                $modelo = $usuarios->findByAttributes(array("nickname" => Yii::app()->user->name));
             
         
-        $this->render('votar');
+        $this->render('votar', array('model' => $model));
         }
     }
 
