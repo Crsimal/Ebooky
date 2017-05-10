@@ -34,48 +34,56 @@ class AccionesController extends Controller {
 
         $model = new Parrafos;
 
+        if (Yii::app()->user->isGuest) {
+            $this->render('accesoRestringido');
+        } else {
 
+            if (isset($_POST['parrafo'])) {
 
-        if (isset($_POST['parrafo'])) {
+                $usuarios = new Users();
+                $modelo = $usuarios->findByAttributes(array("nickname" => Yii::app()->user->name));
 
-            $usuarios = new Users();
-            $modelo = $usuarios->findByAttributes(array("nickname" => Yii::app()->user->name));
-            
-            $criteria=new CDbCriteria;
-                $criteria->select='max(id_parrafo) AS id_parrafo';
+                $criteria = new CDbCriteria;
+                $criteria->select = 'max(id_parrafo) AS id_parrafo';
                 $row = $model->model()->find($criteria);
                 $somevariable = $row['id_parrafo'];
-                $somevariable=$somevariable + 1;
-           
+                $somevariable = $somevariable + 1;
 
-          
-            $model->contenido = $_POST['parrafo'];
-            $model->id_usuario = $modelo->id_usuario;
-            $model->id_parrafo = $somevariable;
-            $model->save();
-            /*
-              $model->attributes = $_POST['Users'];
 
-              $criteria = new CDbCriteria;
-              $criteria->select = 'max(id_usuario) AS id_usuario';
-              $row = $model->model()->find($criteria);
-              $somevariable = $row['id_usuario'];
-              $somevariable = $somevariable + 1;
 
-              $model->id_usuario = $somevariable;
-              $model->ha_escrito = 0;
-              $model->ha_votado = 0;
-             */
+                $model->contenido = $_POST['parrafo'];
+                $model->id_usuario = $modelo->id_usuario;
+                $model->id_parrafo = $somevariable;
+                $model->save();
+                /*
+                  $model->attributes = $_POST['Users'];
+
+                  $criteria = new CDbCriteria;
+                  $criteria->select = 'max(id_usuario) AS id_usuario';
+                  $row = $model->model()->find($criteria);
+                  $somevariable = $row['id_usuario'];
+                  $somevariable = $somevariable + 1;
+
+                  $model->id_usuario = $somevariable;
+                  $model->ha_escrito = 0;
+                  $model->ha_votado = 0;
+                 */
+            }
+
+
+            $this->render('escribir', array('model' => $model));
         }
-
-
-        $this->render('escribir', array('model' => $model));
     }
 
     public function actionVotar() {
-        // renders the view file 'protected/views/site/index.php'
-        // using the default layout 'protected/views/layouts/main.php'
+        if (Yii::app()->user->isGuest) {
+            $this->render('accesoRestringido');
+        } else {
+            
+            
+        
         $this->render('votar');
+        }
     }
 
 }
