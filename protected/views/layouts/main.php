@@ -12,7 +12,7 @@
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css">
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ebooky.css">
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css">
-
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
 
         <title><?php echo CHtml::encode($this->pageTitle); ?></title>
@@ -22,7 +22,7 @@
 
         <div>
 
-            <div id="">
+            <div id="navegacion">
                 <nav>
                     <div class="nav-wrapper z-depth-5 blue lighten-3">
                         <a href="#!" class="brand-logo center"><img src="<?php echo Yii::app()->baseUrl . '/images'; ?>/logo.png" alt="" id="logo"/></a>
@@ -36,21 +36,33 @@
                         </ul>
 
                         <ul class="right hide-on-med-and-down opcionesUsuario">                         
-                            <?php 
-                            if (Yii::app()->user->isGuest){
+                            <?php
+                            if (Yii::app()->user->isGuest) {
                                 echo "<li><a href='index.php?r=users/login' class='waves-effect waves-light btn blue z-dept-5'>Conectarse</a></li>";
-                            }else{
+                            } else {
                                 echo "<li>Conectado como <strong>" . Yii::app()->user->name . "</strong></li>";
                                 echo "<li><a href='index.php?r=users/logout' class='waves-effect waves-light btn blue z-dept-5'>Desconectarse</a></li>";
-                            }                      
+                            }
                             ?> 
                             <li><a href="index.php?r=users/registro" class="waves-effect waves-light btn blue z-dept-5">Registrarse</a></li>
                         </ul>
                         <ul class="side-nav" id="mobile-demo">
-                            <li><a href="sass.html">Sass</a></li>
-                            <li><a href="badges.html">Components</a></li>
-                            <li><a href="collapsible.html">Javascript</a></li>
-                            <li><a href="mobile.html">Mobile</a></li>
+                            <li><a href="index.php?r=landing/index">Inicio</a></li>
+                            <li><a href="index.php?r=acciones/leer">Leer</a></li>
+                            <li><a href="index.php?r=acciones/votar">Votar</a></li>
+                            <li><a href="index.php?r=acciones/escribir">Escribir</a></li>
+                            <li><a href="index.php?r=about/index">About</a></li>
+                            <hr>
+                            <?php
+                            if (Yii::app()->user->isGuest) {
+                                echo "<li><a href='index.php?r=users/login' class='waves-effect waves-light btn blue z-dept-5'>Conectarse</a></li>";
+                            } else {
+                                echo "<li><p class='center grey-text'>Conectado como <strong>" . Yii::app()->user->name . "</strong></p></li>";
+                                echo "<li><a href='index.php?r=users/logout' class='waves-effect waves-light btn blue z-dept-5'>Desconectarse</a></li>";
+                            }
+                            ?> 
+                            <li><a href="index.php?r=users/registro" class="waves-effect waves-light btn blue z-dept-5">Registrarse</a></li>
+
                         </ul>
                     </div>
             </div>
@@ -77,15 +89,15 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 
-<script type="text/javascript" src="<?php echo Yii::app()->baseUrl.'/js/main.js';?>"></script>
-<?php 
+<script type="text/javascript" src="<?php echo Yii::app()->baseUrl . '/js/main.js'; ?>"></script>
+<?php
 /*
-$usuarios = new Users();
+  $usuarios = new Users();
 
-$modelo = $usuarios->findByAttributes(array("nickname"=>Yii::app()->user->name));
+  $modelo = $usuarios->findByAttributes(array("nickname"=>Yii::app()->user->name));
 
-var_dump($modelo->id_usuario);
-*/
+  var_dump($modelo->id_usuario);
+ */
 ?>
 </body>
 </html>

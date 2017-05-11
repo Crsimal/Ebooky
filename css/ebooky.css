@@ -2,6 +2,7 @@
     width: 80%;
 }
 
+
 #logo{
     width: 100%;
     height: auto;
@@ -55,4 +56,8 @@
 
 .marginTop50{
     margin-top: 50px;
+}
+
+#navegacion{
+    font-family: 'Baloo Bhaina';
 }
