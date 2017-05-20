@@ -76,8 +76,6 @@ class AccionesController extends Controller {
                   $somevariable = $somevariable + 1;
 
                   $model->id_usuario = $somevariable;
-                  $model->ha_escrito = 0;
-                  $model->ha_votado = 0;
                  */
             }
 

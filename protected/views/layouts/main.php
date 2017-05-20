@@ -32,6 +32,7 @@
                             <li><a href="index.php?r=acciones/leer">Leer</a></li>
                             <li><a href="index.php?r=acciones/votar">Votar</a></li>
                             <li><a href="index.php?r=acciones/escribir">Escribir</a></li>
+                            <li><a href="index.php?r=about/comofunciona">Como funciona</a></li>
                             <li><a href="index.php?r=about/index">About</a></li>
                         </ul>
 
@@ -61,7 +62,7 @@
                                 echo "<li><a href='index.php?r=users/logout' class='waves-effect waves-light btn blue z-dept-5'>Desconectarse</a></li>";
                             }
                             ?> 
-                            <li><a href="index.php?r=users/registro" class="waves-effect waves-light btn blue z-dept-5">Registrarse</a></li>
+                            <li><a href="index.php?r=users/registro" class="waves-effect waves-light btn blue z-dept-5 ">Registrarse</a></li>
 
                         </ul>
                     </div>

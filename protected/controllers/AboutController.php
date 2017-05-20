@@ -32,6 +32,13 @@ class AboutController extends Controller
 		// using the default layout 'protected/views/layouts/main.php'
 		$this->render('Index');
 	}
+        
+        public function actionComoFunciona()
+	{
+		// renders the view file 'protected/views/site/index.php'
+		// using the default layout 'protected/views/layouts/main.php'
+		$this->render('comoFunciona');
+	}
 
         
   

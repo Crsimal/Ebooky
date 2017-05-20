@@ -1,25 +1,22 @@
 <?php
 
 /**
- * This is the model class for table "users".
+ * This is the model class for table "acciones".
  *
- * The followings are the available columns in table 'users':
+ * The followings are the available columns in table 'acciones':
  * @property integer $id_usuario
- * @property string $name
- * @property string $surname
- * @property string $password
- * @property string $city
- * @property string $email
- * @property string $nickname
+ * @property integer $ha_escrito
+ * @property integer $ha_votado
+ * @property integer $ha_participado
  */
-class Users extends CActiveRecord
+class Acciones extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'users';
+		return 'acciones';
 	}
 
 	/**
@@ -30,15 +27,11 @@ class Users extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name, surname, password, city, email', 'required'),
-			array('', 'numerical', 'integerOnly'=>true),
-			array('name, surname', 'length', 'max'=>18),
-			array('password, city', 'length', 'max'=>20),
-			array('email', 'length', 'max'=>40),
-			array('nickname', 'length', 'max'=>45),
+			array('id_usuario, ha_escrito, ha_votado, ha_participado', 'required'),
+			array('id_usuario, ha_escrito, ha_votado, ha_participado', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id_usuario, name, surname, password, city, email, nickname', 'safe', 'on'=>'search'),
+			array('id_usuario, ha_escrito, ha_votado, ha_participado', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -50,7 +43,8 @@ class Users extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-                    'acciones'=>array(self::BELONGS_TO, 'acciones', 'id_usuario'),
+                    
+                     'acciones'=>array(self::BELONGS_TO, 'users', 'id_usuario'),
 		);
 	}
 
@@ -61,12 +55,9 @@ class Users extends CActiveRecord
 	{
 		return array(
 			'id_usuario' => 'Id Usuario',
-			'name' => 'Name',
-			'surname' => 'Surname',
-			'password' => 'Password',
-			'city' => 'City',
-			'email' => 'Email',
-			'nickname' => 'Nickname',
+			'ha_escrito' => 'Ha Escrito',
+			'ha_votado' => 'Ha Votado',
+			'ha_participado' => 'Ha Participado',
 		);
 	}
 
@@ -89,12 +80,9 @@ class Users extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id_usuario',$this->id_usuario);
-		$criteria->compare('name',$this->name,true);
-		$criteria->compare('surname',$this->surname,true);
-		$criteria->compare('password',$this->password,true);
-		$criteria->compare('city',$this->city,true);
-		$criteria->compare('email',$this->email,true);
-		$criteria->compare('nickname',$this->nickname,true);
+		$criteria->compare('ha_escrito',$this->ha_escrito);
+		$criteria->compare('ha_votado',$this->ha_votado);
+		$criteria->compare('ha_participado',$this->ha_participado);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -105,7 +93,7 @@ class Users extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Users the static model class
+	 * @return Acciones the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

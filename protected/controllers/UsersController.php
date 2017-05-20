@@ -29,17 +29,25 @@ class UsersController extends Controller
 
     	if(isset($_POST['Users']))
     	{
+                //Guardamos los datos de registro del formulario en la base de datos
         	$model->attributes=$_POST['Users'];
                 
                 $criteria=new CDbCriteria;
                 $criteria->select='max(id_usuario) AS id_usuario';
                 $row = $model->model()->find($criteria);
-                $somevariable = $row['id_usuario'];
-                $somevariable=$somevariable + 1;
+                $control_id = $row['id_usuario'];
+                $control_id=$control_id + 1;
                 
-                $model->id_usuario=$somevariable;
-                $model->ha_escrito=0;
-                $model->ha_votado=0;
+                $model->id_usuario=$control_id;
+                
+                
+                //Inicializamos datos en la tabla de acciones de usuario
+                $acciones=new Acciones;
+                $acciones->ha_escrito = 0;
+                $acciones->ha_participado = 1;
+                $acciones->ha_votado = 0;
+                $acciones->id_usuario = $control_id;;
+                $acciones->save();
                 
 
         	if($model->validate())

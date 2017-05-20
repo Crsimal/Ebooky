@@ -11,7 +11,7 @@ $this->pageTitle = Yii::app()->name;
 
 
 <div class="container z-depth-5" id="historia">
-
+    <h3 class="center">Bienvenido a Ebooky</h1>
     <?php
     $parrafos=Historia::model()->with('relacion')->findAll();
     
@@ -20,7 +20,7 @@ $this->pageTitle = Yii::app()->name;
        
        
        echo $parrafo->relacion->contenido;
-            
+       echo "<br><br>";
         
     
 
