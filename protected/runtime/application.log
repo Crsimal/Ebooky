@@ -1624,3 +1624,14 @@ REQUEST_URI=/Ebooky/
 in F:\Xampp\htdocs\Ebooky\protected\views\layouts\main.php (93)
 in F:\Xampp\htdocs\Ebooky\protected\views\layouts\column1.php (6)
 in F:\Xampp\htdocs\Ebooky\protected\controllers\LandingController.php (32)
+2017/05/20 19:04:17 [error] [php] Object of class Acciones could not be converted to int (F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php:54)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): AccionesController->runAction()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): AccionesController->runActionWithFilters()
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): AccionesController->run()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=acciones/escribir
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (54)
+in F:\Xampp\htdocs\Ebooky\index.php (13)

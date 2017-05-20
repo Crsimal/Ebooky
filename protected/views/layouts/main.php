@@ -92,13 +92,9 @@
 
 <script type="text/javascript" src="<?php echo Yii::app()->baseUrl . '/js/main.js'; ?>"></script>
 <?php
-/*
-  $usuarios = new Users();
 
-  $modelo = $usuarios->findByAttributes(array("nickname"=>Yii::app()->user->name));
 
-  var_dump($modelo->id_usuario);
- */
+
 ?>
 </body>
 </html>
