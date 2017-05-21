@@ -44,10 +44,11 @@
     padding-bottom: 50px;
 }
 
-.registro{
+.centradoEstrecho{
     width: 30%;
     margin:auto;
     margin-top: 50px;
+    text-align: center;
 }
 
 .paddingTop50{

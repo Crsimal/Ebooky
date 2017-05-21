@@ -23,7 +23,7 @@ $this->breadcrumbs = array(
     ?>
 
     
-    <div class=" registro center">
+    <div class="centradoEstrecho center">
         
         <img src="<?php echo Yii::app()->baseUrl.'/images';?>/login.png" alt="book"/>
         </br>

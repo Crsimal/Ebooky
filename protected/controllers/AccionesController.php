@@ -47,7 +47,8 @@ class AccionesController extends Controller {
             $acciones = Users::model()->with('acciones')->findByPk($usuario->id_usuario);
             $accion = $acciones->acciones;
             if ($accion->ha_escrito == 1) {
-                $this->render('yaEscrito');
+              
+                $this->render('yaEscrito', array('palabraAccion' => 'escrito'));
             } else {
                 if (isset($_POST['parrafo'])) {
                     $criteria = new CDbCriteria;
@@ -90,7 +91,7 @@ class AccionesController extends Controller {
         $acciones = Users::model()->with('acciones')->findByPk($usuario->id_usuario);
         $accion = $acciones->acciones;
         if ($accion->ha_votado == 1) {
-            $this->render('yaEscrito');
+            $this->render('yaEscrito',array('palabraAccion' => 'votado'));
         }else{
 
         if (isset($_POST['votado'])) {

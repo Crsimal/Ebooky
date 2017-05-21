@@ -21,7 +21,7 @@
 
     <?php echo $form->errorSummary($model); ?>
 
-    <div class=" registro">
+    <div class="centradoEstrecho">
         <div class="row">
             <?php echo $form->labelEx($model, 'Nombre'); ?>
             <?php echo $form->textField($model, 'name'); ?>
