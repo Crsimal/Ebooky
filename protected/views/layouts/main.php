@@ -40,12 +40,13 @@
                             <?php
                             if (Yii::app()->user->isGuest) {
                                 echo "<li><a href='index.php?r=users/login' class='waves-effect waves-light btn blue z-dept-5'>Conectarse</a></li>";
+                                echo "<li><a href='index.php?r=users/registro' class='waves-effect waves-light btn blue z-dept-5'>Registrarse</a></li>";
                             } else {
                                 echo "<li>Conectado como <strong>" . Yii::app()->user->name . "</strong></li>";
                                 echo "<li><a href='index.php?r=users/logout' class='waves-effect waves-light btn blue z-dept-5'>Desconectarse</a></li>";
                             }
                             ?> 
-                            <li><a href="index.php?r=users/registro" class="waves-effect waves-light btn blue z-dept-5">Registrarse</a></li>
+                            
                         </ul>
                         <ul class="side-nav" id="mobile-demo">
                             <li><a href="index.php?r=landing/index">Inicio</a></li>

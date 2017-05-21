@@ -12,7 +12,6 @@ $this->pageTitle = Yii::app()->name;
 </div>
 
 
-<hr>
 
 <div class="row center-align menuContainer center" >
     <div class="col s12 m4">
