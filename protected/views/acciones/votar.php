@@ -37,7 +37,7 @@ foreach ($parrafos as $parrafo) {
 }
 ?>
 
-?>
+
 
 
 

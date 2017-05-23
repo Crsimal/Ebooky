@@ -4,3 +4,7 @@
  * and open the template in the editor.
  */
  $(".button-collapse").sideNav();
+ 
+  $('.tooltipped').tooltip('remove');
+  
+

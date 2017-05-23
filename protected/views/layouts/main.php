@@ -13,7 +13,7 @@
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ebooky.css">
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css">
         <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+        <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/materialize.min.css">
 
         <title><?php echo CHtml::encode($this->pageTitle); ?></title>
     </head>
@@ -88,8 +88,8 @@
 
 </div><!-- page -->
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/materialize.min.js"></script>
 
 <script type="text/javascript" src="<?php echo Yii::app()->baseUrl . '/js/main.js'; ?>"></script>
 <?php
