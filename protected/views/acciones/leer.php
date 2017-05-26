@@ -13,18 +13,14 @@ $this->pageTitle = Yii::app()->name;
 <div class="container z-depth-5" id="historia">
     <h3 class="center">Bienvenido a Ebooky</h1>
     <?php
-    $parrafos=Historia::model()->with('relacion')->findAll();
+   
+    $parrafos = $model->findAllByAttributes(array("id_historia" => $usuario->historia_seleccionada));
     
-
-    foreach ($parrafos as $parrafo) {
-       
-       
-       echo $parrafo->relacion->contenido;
-       echo "<br><br>";
-        
-    
-
+    foreach ($parrafos as $parrafo){
+        echo $parrafo->contenido;
+        echo "</br></br>";
     }
+    
     
     
     

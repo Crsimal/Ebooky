@@ -29,11 +29,12 @@
                         <a href="#" data-activates="mobile-demo" class="button-collapse">Menu</a>
                         <ul class="left hide-on-med-and-down">
                             <li><a href="index.php?r=landing/index">Inicio</a></li>
+                            <li><a href="index.php?r=acciones/seleccion">Seleccionar Historia</a></li>
                             <li><a href="index.php?r=acciones/leer">Leer</a></li>
                             <li><a href="index.php?r=acciones/votar">Votar</a></li>
                             <li><a href="index.php?r=acciones/escribir">Escribir</a></li>
                             <li><a href="index.php?r=about/comofunciona">Como funciona</a></li>
-                            <li><a href="index.php?r=about/index">About</a></li>
+                            
                         </ul>
 
                         <ul class="right hide-on-med-and-down opcionesUsuario">                         
@@ -72,12 +73,8 @@
     </div>
 
     <div class="container" id="menuPrincipal">
-
         <?php echo $content; ?>
     </div><!-- mainmenu -->
-
-
-
 
     <div class="clear"></div>
 

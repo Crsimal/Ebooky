@@ -2,6 +2,35 @@
 /* @var $this SiteController */
 
 $this->pageTitle = Yii::app()->name;
+
+
+if (!Yii::app()->user->isGuest) {
+    $usuarios = new Users;
+    $usuario = $usuarios->findByAttributes(array("nickname" => Yii::app()->user->name));
+    $historia = $usuario->historia_seleccionada;
+
+    $historias = new Historias();
+
+    $seleccion = $historias->findByPk($historia);
+    ?>
+
+    <div class="col s4 paddingTop50 center ">
+        <div class="row">
+            <div class="col s12 m6 offset-m3">
+                <div class="card blue lighten-3 z-depth-5">
+                    <div class="card-content white-text">
+                        <span class="card-title">Historia seleccionada: <strong><?php echo $seleccion->titulo ?></strong></span>
+                        <p>Las acciones de leer, votar y escribir se aplicarán a la historia que tengas seleccionada.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href='index.php?r=acciones/seleccion' class='waves-effect waves-light btn blue z-dept-5'>Cambiar seleccion</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php
+}
 ?>
 
 

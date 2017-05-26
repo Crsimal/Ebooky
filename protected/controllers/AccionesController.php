@@ -26,12 +26,33 @@ class AccionesController extends Controller {
      */
     public function actionLeer() {
 
-        $model = new Historia;
+        $usuarios = new Users();
+        $usuario = $usuarios->findByAttributes(array("nickname" => Yii::app()->user->name));
+        
+        $model = new Parrafos();
 
 
 
+        $this->render('leer', array ('usuario' => $usuario, 'model' => $model));
+    }
 
-        $this->render('leer', array('model' => $model));
+    public function actionSeleccion() {
+
+        $model = new Historias;
+
+        if (Yii::app()->user->isGuest) {
+            $this->render('accesoRestringido');
+        }
+        if (isset($_POST['seleccionado'])) {
+            $usuarios = new Users;
+            $usuario = $usuarios->findByAttributes(array("nickname" => Yii::app()->user->name));
+            $usuario->historia_seleccionada = $_POST['seleccionado'];
+            $usuario->save();
+            $this->redirect(array('landing/index'));
+                    
+        } else {
+            $this->render('seleccion', array('model' => $model));
+        }
     }
 
     public function actionEscribir() {
@@ -47,7 +68,7 @@ class AccionesController extends Controller {
             $acciones = Users::model()->with('acciones')->findByPk($usuario->id_usuario);
             $accion = $acciones->acciones;
             if ($accion->ha_escrito == 1) {
-              
+
                 $this->render('yaEscrito', array('palabraAccion' => 'escrito'));
             } else {
                 if (isset($_POST['parrafo'])) {
@@ -63,6 +84,7 @@ class AccionesController extends Controller {
                     $model->votos = 0;
                     $model->votacionActual = 1;
                     $model->publicado = 0;
+                    $model->id_historia = $usuario->historia_seleccionada;
 
                     //Cuando el usuario escribe se modifica la tabla de acciones indicandolo
 
@@ -70,8 +92,8 @@ class AccionesController extends Controller {
                     $accion->save();
                     $model->save();
                     $this->redirect(array('landing/index'));
-                }else{
-                $this->render('escribir', array('model' => $model));
+                } else {
+                    $this->render('escribir', array('model' => $model));
                 }
             }
         }
@@ -83,37 +105,37 @@ class AccionesController extends Controller {
 
         $usuarios = new Users();
         $usuario = $usuarios->findByAttributes(array("nickname" => Yii::app()->user->name));
-        
+
         if (Yii::app()->user->isGuest) {
             $this->render('accesoRestringido');
         } else {
-        
-        $acciones = Users::model()->with('acciones')->findByPk($usuario->id_usuario);
-        $accion = $acciones->acciones;
-        if ($accion->ha_votado == 1) {
-            $this->render('yaEscrito',array('palabraAccion' => 'votado'));
-        }else{
 
-        if (isset($_POST['votado'])) {
-            //sumamos un voto
-            $parrafo = $model->findByAttributes(array("id_parrafo" => $_POST['votado']));
-            $sumaVoto = $parrafo->votos + 1;
-            $parrafo->votos = $sumaVoto;
-            $parrafo->save();
-
-            //modificamos la tabla de acciones de usuario indicando que ya ha votado
-            $usuarios = new Users();
-            $usuario = $usuarios->findByAttributes(array("nickname" => Yii::app()->user->name));
             $acciones = Users::model()->with('acciones')->findByPk($usuario->id_usuario);
             $accion = $acciones->acciones;
-            $accion->ha_votado = 1;
-            $accion->save();
-            $this->redirect(array('landing/index'));
-        }
-        else{
-            $this->render('votar', array('model' => $model));
-        }
+            if ($accion->ha_votado == 1) {
+                $this->render('yaEscrito', array('palabraAccion' => 'votado'));
+            } else {
+
+                if (isset($_POST['votado'])) {
+                    //sumamos un voto
+                    $parrafo = $model->findByAttributes(array("id_parrafo" => $_POST['votado']));
+                    $sumaVoto = $parrafo->votos + 1;
+                    $parrafo->votos = $sumaVoto;
+                    $parrafo->save();
+
+                    //modificamos la tabla de acciones de usuario indicando que ya ha votado
+                    $usuarios = new Users();
+                    $usuario = $usuarios->findByAttributes(array("nickname" => Yii::app()->user->name));
+                    $acciones = Users::model()->with('acciones')->findByPk($usuario->id_usuario);
+                    $accion = $acciones->acciones;
+                    $accion->ha_votado = 1;
+                    $accion->save();
+                    $this->redirect(array('landing/index'));
+                } else {
+                    $this->render('votar', array('model' => $model, 'usuario' => $usuario));
+                }
+            }
         }
     }
-    }
+
 }

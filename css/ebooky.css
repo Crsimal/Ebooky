@@ -10,10 +10,6 @@
     max-width: 160px;
 }
 
-.menuContainer{
-    margin-top: 100px;
-
-}
 
 #historia{
     background-color: white;
@@ -61,14 +57,15 @@
 }
 
 #navegacion{
-    font-family: 'Baloo Bhaina';
+ /*  font-family: 'Baloo Bhaina'; */
 }
 
 .menuContainer{
-     font-family: 'Baloo Bhaina';
+    /*  font-family: 'Baloo Bhaina';*/
      color: grey;
      font-size: 20px;
      text-align: center;
+     margin-top: 50px;
 }
 
 .maxImage {

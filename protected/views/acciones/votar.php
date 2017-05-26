@@ -13,10 +13,11 @@ $this->pageTitle = Yii::app()->name;
 /* @var $this SiteController */
 
 
-$parrafos = $model->findAllByAttributes(array("votacionActual" => 1));
+$parrafos = $model->findAllByAttributes(array("id_historia" => $usuario->historia_seleccionada));
 //$parrafos = $model->findAll();
 
 foreach ($parrafos as $parrafo) {
+    if ($parrafo->votacionActual==1){
     ?>
 
     <div class='  parrafoVotacion z-depth-5 marginTop50'>
@@ -34,7 +35,7 @@ foreach ($parrafos as $parrafo) {
     </div>
 
     <?php
-}
+}}
 ?>
 
 
