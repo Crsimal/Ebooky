@@ -2,6 +2,8 @@
 /* @var $this SiteController */
 
 $this->pageTitle = Yii::app()->name;
+
+$historia = $historias->findByAttributes(array("id_historia" => $usuario->historia_seleccionada));
 ?>
 
 
@@ -11,18 +13,24 @@ $this->pageTitle = Yii::app()->name;
 
 
 <div class="container z-depth-5" id="historia">
-    <h3 class="center">Bienvenido a Ebooky</h1>
-    <?php
-   
-    $parrafos = $model->findAllByAttributes(array("id_historia" => $usuario->historia_seleccionada));
-    
-    foreach ($parrafos as $parrafo){
-        echo $parrafo->contenido;
-        echo "</br></br>";
-    }
-    
-    
-    
-    
-    ?>
+    <h3 class="center"><?php echo $historia->titulo; ?></h1>
+        <?php
+        $parrafos = ParrafosPublicados::model()->with('idparrafo')->findAllByAttributes(array('id_historia' => $usuario->historia_seleccionada));
+
+        foreach ($parrafos as $parrafo) {
+            foreach ($parrafo->idparrafo as $contenido) {
+                echo $contenido->contenido;
+                echo "<br><br>";
+            }
+        }
+
+        /*
+          foreach($parrafos as $parrafo){
+          foreach($parrafo->idparrafo as $contenido){
+          echo $contenido->contenido;
+          echo "<br><br>";
+          }
+          }
+         */
+        ?>
 </div>

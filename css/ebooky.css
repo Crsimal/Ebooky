@@ -26,12 +26,13 @@
     background-color: white;
     color: black;
     width: 75%;
-    height: 150px;
+    height: auto;
     margin: 0 auto;
     margin-top: 100px;
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 20px;
+    padding-bottom: 20px;
     
 }
 

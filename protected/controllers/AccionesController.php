@@ -29,11 +29,12 @@ class AccionesController extends Controller {
         $usuarios = new Users();
         $usuario = $usuarios->findByAttributes(array("nickname" => Yii::app()->user->name));
         
-        $model = new Parrafos();
+   
+        $historias = new Historias();
 
 
 
-        $this->render('leer', array ('usuario' => $usuario, 'model' => $model));
+        $this->render('leer', array ('usuario' => $usuario, 'historias' => $historias));
     }
 
     public function actionSeleccion() {

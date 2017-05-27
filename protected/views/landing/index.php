@@ -14,7 +14,7 @@ if (!Yii::app()->user->isGuest) {
     $seleccion = $historias->findByPk($historia);
     ?>
 
-    <div class="col s4 paddingTop50 center ">
+    <div class="col s4 center ">
         <div class="row">
             <div class="col s12 m6 offset-m3">
                 <div class="card blue lighten-3 z-depth-5">
@@ -32,7 +32,7 @@ if (!Yii::app()->user->isGuest) {
     <?php
 }
 ?>
-
+<hr>
 
 
 
