@@ -84,7 +84,7 @@ class AccionesController extends Controller {
             $criteria = new CDbCriteria;
             $criteria->condition = "id_usuario = $usuario->id_usuario AND id_historia = $usuario->historia_seleccionada";
             $models = UsuarioHaEscritoEn::model()->findAll($criteria);
-            
+
             if (!empty($models)) {
 
                 $this->render('yaEscrito', array('palabraAccion' => 'escrito'));
@@ -109,12 +109,21 @@ class AccionesController extends Controller {
                     $accion->ha_escrito = 1;
                     $accion->save();
                     $model->save();
-                    
+
                     $usuarioHaEscritoEn = new UsuarioHaEscritoEn;
-                    $usuarioHaEscritoEn->id = 1;
+                 
                     $usuarioHaEscritoEn->id_historia = $usuario->historia_seleccionada;
                     $usuarioHaEscritoEn->id_usuario = $usuario->id_usuario;
-                    $usuarioHaEscritoEn->save();    
+                    
+                    $criteria = new CDbCriteria;
+                    $criteria->select = 'max(id) AS id';
+                    $row = $usuarioHaEscritoEn->model()->find($criteria);
+                    $control_id = $row['id'];
+                    $control_id = $control_id + 1;
+
+                    $usuarioHaEscritoEn->id = $control_id;
+                    
+                    $usuarioHaEscritoEn->save();
 
                     $this->redirect(array('landing/index'));
                 } else {
@@ -160,18 +169,30 @@ class AccionesController extends Controller {
                     $accion = $acciones->acciones;
                     $accion->ha_votado = 1;
                     $accion->save();
-                    
-                    
+
+
                     //indicamos que ya ha votado en esta historia en la tabla de control
+
+
+                    
+
                     $usuarioHaVotadoEn = new UsuarioHaVotadoEn;
-                    //$usuarioHaVotadoEn->id = 0;
+                    
                     $usuarioHaVotadoEn->id_historia = $usuario->historia_seleccionada;
                     $usuarioHaVotadoEn->id_usuario = $usuario->id_usuario;
-                 
+
+                    $criteria = new CDbCriteria;
+                    $criteria->select = 'max(id) AS id';
+                    $row = $usuarioHaVotadoEn->model()->find($criteria);
+                    $control_id = $row['id'];
+                    $control_id = $control_id + 1;
+
+                    $usuarioHaVotadoEn->id = $control_id;
+
                     $usuarioHaVotadoEn->save();
-                    
-                    
-                    
+
+
+
                     $this->redirect(array('landing/index'));
                 } else {
                     $this->render('votar', array('model' => $model, 'usuario' => $usuario));

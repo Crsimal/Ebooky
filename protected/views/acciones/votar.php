@@ -26,6 +26,7 @@ foreach ($parrafos as $parrafo) {
 
 
         <form method="post">
+            
             <input type="hidden" name="votado" value="<?php echo $parrafo->id_parrafo; ?>">
             <div class="row buttons center">
                 <button class="btn waves-effect waves-light" type="submit" name="action">Votar</button>           

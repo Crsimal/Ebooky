@@ -26,11 +26,11 @@ class ParrafosPublicados extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id, id_parrafo, id_historia', 'required'),
-			array('id, id_parrafo, id_historia', 'numerical', 'integerOnly'=>true),
+			array('id_parrafo, id_historia', 'required'),
+			array('id_parrafo, id_historia', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, id_parrafo, id_historia', 'safe', 'on'=>'search'),
+			array('id_parrafo, id_historia', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -54,7 +54,7 @@ class ParrafosPublicados extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
+	
 			'id_parrafo' => 'Id Parrafo',
 			'id_historia' => 'Id Historia',
 		);
@@ -78,7 +78,7 @@ class ParrafosPublicados extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id',$this->id);
+		
 		$criteria->compare('id_parrafo',$this->id_parrafo);
 		$criteria->compare('id_historia',$this->id_historia);
 

@@ -38,13 +38,10 @@ class ParrafospublicadosController extends Controller {
             foreach ($arrayParrafosMaxVotados as $parrafoAñadir) {
                 $parrafospublicados = new ParrafosPublicados;
                 $criteria = new CDbCriteria;
-                $criteria->select = 'max(id) AS id';
-                $row = $parrafospublicados->model()->find($criteria);
-                $somevariable = $row['id'];
-                $somevariable = $somevariable + 1;
+               
 
                 //guardamos los datos de la tabla parrafos_publicados
-                $parrafospublicados->id = $somevariable;
+           
                 $parrafospublicados->id_parrafo = $parrafoAñadir->id_parrafo;
                 $parrafospublicados->id_historia = $parrafoAñadir->id_historia;
                 $parrafospublicados->save();
@@ -57,6 +54,8 @@ class ParrafospublicadosController extends Controller {
                 $limpiar->publicado = 1;
                 $limpiar->save();
             }
+            //$delete = UsuarioHaEscritoEn::model()->deleteAll();
+            
             $this->redirect(array('landing/index'));
         }
 
