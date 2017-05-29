@@ -31,6 +31,11 @@
 		<?php echo $form->textField($model,'categoria',array('size'=>20,'maxlength'=>20)); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->label($model,'terminada'); ?>
+		<?php echo $form->textField($model,'terminada'); ?>
+	</div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Search'); ?>
 	</div>

@@ -26,15 +26,27 @@ class AccionesController extends Controller {
      */
     public function actionLeer() {
 
+        //usuarios e historias
         $usuarios = new Users();
-        $usuario = $usuarios->findByAttributes(array("nickname" => Yii::app()->user->name));
-        
-   
         $historias = new Historias();
 
+        //usuario conectado
+        $usuario = $usuarios->findByAttributes(array("nickname" => Yii::app()->user->name));
+
+        //historia seleccionada
+        $historia = $historias->findByAttributes(array("id_historia" => $usuario->historia_seleccionada));
 
 
-        $this->render('leer', array ('usuario' => $usuario, 'historias' => $historias));
+        //parrafos restantes
+        $numeroParrafos = ParrafosPublicados::model()->countByAttributes(array('id_historia' => $usuario->historia_seleccionada));
+        $parrafosRestantes = $historia->limiteCaracteres - $numeroParrafos;
+
+        //si es invitado restringimos acceso, si no, reenderizamos la vista
+        if (Yii::app()->user->isGuest) {
+            $this->render('accesoRestringido');
+        } else {
+            $this->render('leer', array('usuario' => $usuario, 'historias' => $historias, 'parrafosRestantes' => $parrafosRestantes, 'historia' => $historia));
+        }
     }
 
     public function actionSeleccion() {
@@ -43,16 +55,16 @@ class AccionesController extends Controller {
 
         if (Yii::app()->user->isGuest) {
             $this->render('accesoRestringido');
-        }
-        if (isset($_POST['seleccionado'])) {
-            $usuarios = new Users;
-            $usuario = $usuarios->findByAttributes(array("nickname" => Yii::app()->user->name));
-            $usuario->historia_seleccionada = $_POST['seleccionado'];
-            $usuario->save();
-            $this->redirect(array('landing/index'));
-                    
         } else {
-            $this->render('seleccion', array('model' => $model));
+            if (isset($_POST['seleccionado'])) {
+                $usuarios = new Users;
+                $usuario = $usuarios->findByAttributes(array("nickname" => Yii::app()->user->name));
+                $usuario->historia_seleccionada = $_POST['seleccionado'];
+                $usuario->save();
+                $this->redirect(array('landing/index'));
+            } else {
+                $this->render('seleccion', array('model' => $model));
+            }
         }
     }
 
@@ -68,7 +80,12 @@ class AccionesController extends Controller {
         } else {
             $acciones = Users::model()->with('acciones')->findByPk($usuario->id_usuario);
             $accion = $acciones->acciones;
-            if ($accion->ha_escrito == 1) {
+
+            $criteria = new CDbCriteria;
+            $criteria->condition = "id_usuario = $usuario->id_usuario AND id_historia = $usuario->historia_seleccionada";
+            $models = UsuarioHaEscritoEn::model()->findAll($criteria);
+            
+            if (!empty($models)) {
 
                 $this->render('yaEscrito', array('palabraAccion' => 'escrito'));
             } else {
@@ -92,6 +109,13 @@ class AccionesController extends Controller {
                     $accion->ha_escrito = 1;
                     $accion->save();
                     $model->save();
+                    
+                    $usuarioHaEscritoEn = new UsuarioHaEscritoEn;
+                    $usuarioHaEscritoEn->id = 1;
+                    $usuarioHaEscritoEn->id_historia = $usuario->historia_seleccionada;
+                    $usuarioHaEscritoEn->id_usuario = $usuario->id_usuario;
+                    $usuarioHaEscritoEn->save();    
+
                     $this->redirect(array('landing/index'));
                 } else {
                     $this->render('escribir', array('model' => $model));
@@ -113,7 +137,12 @@ class AccionesController extends Controller {
 
             $acciones = Users::model()->with('acciones')->findByPk($usuario->id_usuario);
             $accion = $acciones->acciones;
-            if ($accion->ha_votado == 1) {
+
+            $criteria = new CDbCriteria;
+            $criteria->condition = "id_usuario = $usuario->id_usuario AND id_historia = $usuario->historia_seleccionada";
+            $models = UsuarioHaVotadoEn::model()->findAll($criteria);
+
+            if (!empty($models)) {
                 $this->render('yaEscrito', array('palabraAccion' => 'votado'));
             } else {
 
@@ -131,6 +160,18 @@ class AccionesController extends Controller {
                     $accion = $acciones->acciones;
                     $accion->ha_votado = 1;
                     $accion->save();
+                    
+                    
+                    //indicamos que ya ha votado en esta historia en la tabla de control
+                    $usuarioHaVotadoEn = new UsuarioHaVotadoEn;
+                    //$usuarioHaVotadoEn->id = 0;
+                    $usuarioHaVotadoEn->id_historia = $usuario->historia_seleccionada;
+                    $usuarioHaVotadoEn->id_usuario = $usuario->id_usuario;
+                 
+                    $usuarioHaVotadoEn->save();
+                    
+                    
+                    
                     $this->redirect(array('landing/index'));
                 } else {
                     $this->render('votar', array('model' => $model, 'usuario' => $usuario));

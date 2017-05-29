@@ -3325,3 +3325,1129 @@ Stack trace:
 #15 {main}
 REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
 ---
+2017/05/27 11:02:36 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php:336
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(291): CFilterChain->run()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('update')
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('parrafos/update')
+#10 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Ebooky/index.php?r=parrafos/update
+---
+2017/05/27 11:03:00 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php:336
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(291): CFilterChain->run()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('update')
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('parrafos/update')
+#10 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Ebooky/index.php?r=parrafos/update
+---
+2017/05/27 11:03:07 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in F:\Xampp\yii-1.1.17.467ff50\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(291): CFilterChain->run()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('parrafos/admin')
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Ebooky/index.php?r=parrafos/admin
+HTTP_REFERER=http://localhost/Ebooky/index.php?r=parrafos/create
+---
+2017/05/27 11:03:37 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\views\landing\index.php:22)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): LandingController->renderFile()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): LandingController->renderPartial()
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\LandingController.php(32): LandingController->render()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): LandingController->actionIndex()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): LandingController->runAction()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): LandingController->runActionWithFilters()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): LandingController->run()
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php
+in F:\Xampp\htdocs\Ebooky\protected\views\landing\index.php (22)
+in F:\Xampp\htdocs\Ebooky\protected\controllers\LandingController.php (32)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/27 11:04:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "manage".' in F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php:483
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(270): CController->missingAction('manage')
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('manage')
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('parrafos/manage')
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Ebooky/index.php?r=parrafos/manage
+---
+2017/05/27 11:07:35 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php:116)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): AccionesController->runAction()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): AccionesController->runActionWithFilters()
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): AccionesController->run()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=acciones/votar
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (116)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/27 11:07:54 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php:71)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): AccionesController->runAction()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): AccionesController->runActionWithFilters()
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): AccionesController->run()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=acciones/escribir
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (71)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/27 11:55:34 [error] [php] Cannot modify header information - headers already sent by (output started at F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php:793) (F:\Xampp\yii-1.1.17.467ff50\framework\web\CHttpRequest.php:889)
+Stack trace:
+#0 F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php(33): ParrafospublicadosController->redirect()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): ParrafospublicadosController->actionIndex()
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): ParrafospublicadosController->runAction()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): ParrafospublicadosController->runActionWithFilters()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): ParrafospublicadosController->run()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
+in F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php (33)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/27 11:55:36 [error] [php] Cannot modify header information - headers already sent by (output started at F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php:793) (F:\Xampp\yii-1.1.17.467ff50\framework\web\CHttpRequest.php:889)
+Stack trace:
+#0 F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php(33): ParrafospublicadosController->redirect()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): ParrafospublicadosController->actionIndex()
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): ParrafospublicadosController->runAction()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): ParrafospublicadosController->runActionWithFilters()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): ParrafospublicadosController->run()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
+in F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php (33)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/27 11:55:49 [error] [php] Cannot modify header information - headers already sent by (output started at F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php:793) (F:\Xampp\yii-1.1.17.467ff50\framework\web\CHttpRequest.php:889)
+Stack trace:
+#0 F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php(33): ParrafospublicadosController->redirect()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): ParrafospublicadosController->actionIndex()
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): ParrafospublicadosController->runAction()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): ParrafospublicadosController->runActionWithFilters()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): ParrafospublicadosController->run()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
+in F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php (33)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/27 12:04:28 [error] [exception.CException] exception 'CException' with message 'Property "Parrafos.id" is not defined.' in F:\Xampp\yii-1.1.17.467ff50\framework\base\CComponent.php:173
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\db\ar\CActiveRecord.php(161): CComponent->__set('id', 0)
+#1 F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php(35): CActiveRecord->__set('id', 0)
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): ParrafospublicadosController->actionIndex()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('')
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('parrafospublica...')
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
+HTTP_REFERER=http://localhost/Ebooky/index.php?r=parrafospublicados
+---
+2017/05/27 12:05:14 [error] [php] Creating default object from empty value (F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php:36)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): ParrafospublicadosController->runAction()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): ParrafospublicadosController->runActionWithFilters()
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): ParrafospublicadosController->run()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
+in F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php (36)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/27 12:05:41 [error] [php] Creating default object from empty value (F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php:37)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): ParrafospublicadosController->runAction()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): ParrafospublicadosController->runActionWithFilters()
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): ParrafospublicadosController->run()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
+in F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php (37)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/27 12:07:05 [error] [php] Creating default object from empty value (F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php:38)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): ParrafospublicadosController->runAction()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): ParrafospublicadosController->runActionWithFilters()
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): ParrafospublicadosController->run()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
+in F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php (38)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/27 12:07:34 [error] [php] Undefined variable: parrafopublicados (F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php:39)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): ParrafospublicadosController->runAction()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): ParrafospublicadosController->runActionWithFilters()
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): ParrafospublicadosController->run()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
+in F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php (39)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/27 12:08:23 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `parrafos_publicados` (`id`, `id_parrafo`, `id_historia`) VALUES (:yp0, :yp1, :yp2).
+in F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php (38)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/27 12:08:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `parrafos_publicados` (`id`, `id_parrafo`, `id_historia`) VALUES (:yp0, :yp1, :yp2)' in F:\Xampp\yii-1.1.17.467ff50\framework\db\CDbCommand.php:358
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\db\ar\CActiveRecord.php(1080): CDbCommand->execute()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\db\ar\CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php(38): CActiveRecord->save()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): ParrafospublicadosController->actionIndex()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('')
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('parrafospublica...')
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
+HTTP_REFERER=http://localhost/Ebooky/index.php?r=parrafospublicados
+---
+2017/05/27 12:27:31 [error] [exception.CException] exception 'CException' with message 'Property "Parrafos.save" is not defined.' in F:\Xampp\yii-1.1.17.467ff50\framework\base\CComponent.php:130
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\db\ar\CActiveRecord.php(145): CComponent->__get('save')
+#1 F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php(55): CActiveRecord->__get('save')
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): ParrafospublicadosController->actionIndex()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('')
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('parrafospublica...')
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
+HTTP_REFERER=http://localhost/Ebooky/index.php?r=parrafospublicados
+---
+2017/05/27 12:27:53 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php:20)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): ParrafospublicadosController->renderFile()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): ParrafospublicadosController->renderPartial()
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php(60): ParrafospublicadosController->render()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): ParrafospublicadosController->actionIndex()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): ParrafospublicadosController->runAction()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): ParrafospublicadosController->runActionWithFilters()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): ParrafospublicadosController->run()
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
+in F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php (20)
+in F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php (60)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/27 12:28:12 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php:20)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): ParrafospublicadosController->renderFile()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): ParrafospublicadosController->renderPartial()
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php(60): ParrafospublicadosController->render()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): ParrafospublicadosController->actionIndex()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): ParrafospublicadosController->runAction()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): ParrafospublicadosController->runActionWithFilters()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): ParrafospublicadosController->run()
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
+in F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php (20)
+in F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php (60)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/27 12:29:10 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php:20)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): ParrafospublicadosController->renderFile()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): ParrafospublicadosController->renderPartial()
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php(61): ParrafospublicadosController->render()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): ParrafospublicadosController->actionIndex()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): ParrafospublicadosController->runAction()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): ParrafospublicadosController->runActionWithFilters()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): ParrafospublicadosController->run()
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
+in F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php (20)
+in F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php (61)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/27 12:31:03 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php:20)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): ParrafospublicadosController->renderFile()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): ParrafospublicadosController->renderPartial()
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php(60): ParrafospublicadosController->render()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): ParrafospublicadosController->actionIndex()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): ParrafospublicadosController->runAction()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): ParrafospublicadosController->runActionWithFilters()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): ParrafospublicadosController->run()
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
+in F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php (20)
+in F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php (60)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/27 12:33:54 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php:20)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): ParrafospublicadosController->renderFile()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): ParrafospublicadosController->renderPartial()
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php(59): ParrafospublicadosController->render()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): ParrafospublicadosController->actionIndex()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): ParrafospublicadosController->runAction()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): ParrafospublicadosController->runActionWithFilters()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): ParrafospublicadosController->run()
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
+in F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php (20)
+in F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php (59)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 17:12:37 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\views\acciones\leer.php:6)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): AccionesController->renderFile()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): AccionesController->renderPartial()
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php(37): AccionesController->render()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): AccionesController->actionLeer()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): AccionesController->runAction()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): AccionesController->runActionWithFilters()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): AccionesController->run()
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=acciones/leer
+in F:\Xampp\htdocs\Ebooky\protected\views\acciones\leer.php (6)
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (37)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 17:12:41 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\views\acciones\leer.php:6)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): AccionesController->renderFile()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): AccionesController->renderPartial()
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php(37): AccionesController->render()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): AccionesController->actionLeer()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): AccionesController->runAction()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): AccionesController->runActionWithFilters()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): AccionesController->run()
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=acciones/leer
+in F:\Xampp\htdocs\Ebooky\protected\views\acciones\leer.php (6)
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (37)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 17:15:04 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\views\acciones\leer.php:6)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): AccionesController->renderFile()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): AccionesController->renderPartial()
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php(37): AccionesController->render()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): AccionesController->actionLeer()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): AccionesController->runAction()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): AccionesController->runActionWithFilters()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): AccionesController->run()
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=acciones/leer
+in F:\Xampp\htdocs\Ebooky\protected\views\acciones\leer.php (6)
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (37)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 17:15:07 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\views\acciones\leer.php:6)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): AccionesController->renderFile()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): AccionesController->renderPartial()
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php(37): AccionesController->render()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): AccionesController->actionLeer()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): AccionesController->runAction()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): AccionesController->runActionWithFilters()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): AccionesController->run()
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=acciones/leer
+in F:\Xampp\htdocs\Ebooky\protected\views\acciones\leer.php (6)
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (37)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 17:17:07 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php:20)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): ParrafospublicadosController->renderFile()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): ParrafospublicadosController->renderPartial()
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php(59): ParrafospublicadosController->render()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): ParrafospublicadosController->actionIndex()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): ParrafospublicadosController->runAction()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): ParrafospublicadosController->runActionWithFilters()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): ParrafospublicadosController->run()
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
+in F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php (20)
+in F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php (59)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 17:17:39 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php:20)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): ParrafospublicadosController->renderFile()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): ParrafospublicadosController->renderPartial()
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php(59): ParrafospublicadosController->render()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): ParrafospublicadosController->actionIndex()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): ParrafospublicadosController->runAction()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): ParrafospublicadosController->runActionWithFilters()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): ParrafospublicadosController->run()
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
+in F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php (20)
+in F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php (59)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 17:19:06 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php:20)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): ParrafospublicadosController->renderFile()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): ParrafospublicadosController->renderPartial()
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php(59): ParrafospublicadosController->render()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): ParrafospublicadosController->actionIndex()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): ParrafospublicadosController->runAction()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): ParrafospublicadosController->runActionWithFilters()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): ParrafospublicadosController->run()
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
+in F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php (20)
+in F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php (59)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 17:58:18 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php:119)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): AccionesController->runAction()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): AccionesController->runActionWithFilters()
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): AccionesController->run()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=acciones/votar
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (119)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 17:58:23 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php:20)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): ParrafospublicadosController->renderFile()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): ParrafospublicadosController->renderPartial()
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php(59): ParrafospublicadosController->render()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): ParrafospublicadosController->actionIndex()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): ParrafospublicadosController->runAction()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): ParrafospublicadosController->runActionWithFilters()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): ParrafospublicadosController->run()
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
+in F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php (20)
+in F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php (59)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 17:59:46 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php:119)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): AccionesController->runAction()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): AccionesController->runActionWithFilters()
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): AccionesController->run()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=acciones/votar
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (119)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 18:12:42 [error] [php] Use of undefined constant Parrafos - assumed 'Parrafos' (F:\Xampp\htdocs\Ebooky\protected\views\acciones\leer.php:21)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): AccionesController->renderFile()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): AccionesController->renderPartial()
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php(40): AccionesController->render()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): AccionesController->actionLeer()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): AccionesController->runAction()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): AccionesController->runActionWithFilters()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): AccionesController->run()
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=acciones/leer
+in F:\Xampp\htdocs\Ebooky\protected\views\acciones\leer.php (21)
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (40)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 18:13:52 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\views\acciones\leer.php:31)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): AccionesController->renderFile()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): AccionesController->renderPartial()
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php(40): AccionesController->render()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): AccionesController->actionLeer()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): AccionesController->runAction()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): AccionesController->runActionWithFilters()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): AccionesController->run()
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=acciones/leer
+in F:\Xampp\htdocs\Ebooky\protected\views\acciones\leer.php (31)
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (40)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 18:20:09 [error] [exception.CException] exception 'CException' with message 'Historias and its behaviors do not have a method or closure named "countAllByAttributes".' in F:\Xampp\yii-1.1.17.467ff50\framework\base\CComponent.php:266
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\db\ar\CActiveRecord.php(227): CComponent->__call('countAllByAttri...', Array)
+#1 F:\Xampp\htdocs\Ebooky\protected\views\acciones\leer.php(7): CActiveRecord->__call('countAllByAttri...', Array)
+#2 F:\Xampp\htdocs\Ebooky\protected\views\acciones\leer.php(7): Historias->countAllByAttributes(Array)
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CBaseController.php(126): require('F:\\Xampp\\htdocs...')
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\\Xampp\\htdocs...', Array, true)
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): CBaseController->renderFile('F:\\Xampp\\htdocs...', Array, true)
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): CController->renderPartial('leer', Array, true)
+#7 F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php(40): CController->render('leer', Array)
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): AccionesController->actionLeer()
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('leer')
+#13 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('acciones/leer')
+#14 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Ebooky/index.php?r=acciones/leer
+HTTP_REFERER=http://localhost/Ebooky/index.php?r=acciones/seleccion
+---
+2017/05/29 18:30:57 [error] [php] Undefined variable: historia (F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php:35)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): AccionesController->runAction()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): AccionesController->runActionWithFilters()
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): AccionesController->run()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=acciones/leer
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (35)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 18:31:38 [error] [php] Undefined variable: historias (F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php:29)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): AccionesController->runAction()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): AccionesController->runActionWithFilters()
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): AccionesController->run()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=acciones/leer
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (29)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 18:31:48 [error] [php] Undefined variable: usuario (F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php:32)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): AccionesController->runAction()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): AccionesController->runActionWithFilters()
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): AccionesController->run()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=acciones/leer
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (32)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 18:32:45 [error] [php] Undefined variable: historia (F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php:37)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): AccionesController->runAction()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): AccionesController->runActionWithFilters()
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): AccionesController->run()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=acciones/leer
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (37)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 18:33:00 [error] [php] Undefined variable: historia (F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php:37)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): AccionesController->runAction()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): AccionesController->runActionWithFilters()
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): AccionesController->run()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=acciones/leer
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (37)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 18:33:20 [error] [php] Undefined variable: historias (F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php:33)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): AccionesController->runAction()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): AccionesController->runActionWithFilters()
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): AccionesController->run()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=acciones/leer
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (33)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 18:33:37 [error] [php] Undefined variable: usuario (F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php:34)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): AccionesController->runAction()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): AccionesController->runActionWithFilters()
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): AccionesController->run()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=acciones/leer
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (34)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 18:33:53 [error] [php] Undefined variable: historia (F:\Xampp\htdocs\Ebooky\protected\views\acciones\leer.php:23)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): AccionesController->renderFile()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): AccionesController->renderPartial()
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php(50): AccionesController->render()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): AccionesController->actionLeer()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): AccionesController->runAction()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): AccionesController->runActionWithFilters()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): AccionesController->run()
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=acciones/leer
+in F:\Xampp\htdocs\Ebooky\protected\views\acciones\leer.php (23)
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (50)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 18:34:34 [error] [php] Undefined variable: tituloHistoria (F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php:50)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): AccionesController->runAction()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): AccionesController->runActionWithFilters()
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): AccionesController->run()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=acciones/leer
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (50)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 18:35:26 [error] [php] Undefined variable: historia (F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php:40)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): AccionesController->runAction()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): AccionesController->runActionWithFilters()
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): AccionesController->run()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=acciones/leer
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (40)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 18:35:50 [error] [php] Undefined variable: historia (F:\Xampp\htdocs\Ebooky\protected\views\acciones\leer.php:23)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): AccionesController->renderFile()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): AccionesController->renderPartial()
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php(50): AccionesController->render()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): AccionesController->actionLeer()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): AccionesController->runAction()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): AccionesController->runActionWithFilters()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): AccionesController->run()
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=acciones/leer
+in F:\Xampp\htdocs\Ebooky\protected\views\acciones\leer.php (23)
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (50)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 18:39:31 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '3' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `historias` (`id_historia`, `titulo`, `limiteCaracteres`, `categoria`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in F:\Xampp\htdocs\Ebooky\protected\controllers\HistoriasController.php (73)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 18:39:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '3' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `historias` (`id_historia`, `titulo`, `limiteCaracteres`, `categoria`) VALUES (:yp0, :yp1, :yp2, :yp3)' in F:\Xampp\yii-1.1.17.467ff50\framework\db\CDbCommand.php:358
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\db\ar\CActiveRecord.php(1080): CDbCommand->execute()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\db\ar\CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\HistoriasController.php(73): CActiveRecord->save()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): HistoriasController->actionCreate()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(291): CFilterChain->run()
+#11 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('create')
+#13 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('historias/creat...')
+#14 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Ebooky/index.php?r=historias/create
+HTTP_REFERER=http://localhost/Ebooky/index.php?r=historias/create
+---
+2017/05/29 18:41:01 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php:1118
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(291): CFilterChain->run()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('historias/delet...')
+#10 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Ebooky/index.php?r=historias/delete&id=4
+HTTP_REFERER=http://localhost/Ebooky/index.php?r=historias/admin
+---
+2017/05/29 18:41:31 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php:1118
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(291): CFilterChain->run()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('historias/delet...')
+#10 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Ebooky/index.php?r=historias/delete&id=4
+HTTP_REFERER=http://localhost/Ebooky/index.php?r=historias/admin
+---
+2017/05/29 18:41:55 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php:128)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): AccionesController->runAction()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): AccionesController->runActionWithFilters()
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): AccionesController->run()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=acciones/votar
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (128)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 18:42:05 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php:128)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): AccionesController->runAction()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): AccionesController->runActionWithFilters()
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): AccionesController->run()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=acciones/votar
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (128)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 18:42:07 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php:83)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): AccionesController->runAction()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): AccionesController->runActionWithFilters()
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): AccionesController->run()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=acciones/escribir
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (83)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 18:42:41 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php:1118
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(291): CFilterChain->run()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('historias/delet...')
+#10 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Ebooky/index.php?r=historias/delete&id=4
+HTTP_REFERER=http://localhost/Ebooky/index.php?r=historias/admin
+---
+2017/05/29 18:43:08 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php:1118
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(291): CFilterChain->run()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('historias/delet...')
+#10 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Ebooky/index.php?r=historias/delete&id=4
+HTTP_REFERER=http://localhost/Ebooky/index.php?r=historias/admin
+---
+2017/05/29 18:44:14 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php:1118
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(291): CFilterChain->run()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('historias/delet...')
+#10 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Ebooky/index.php?r=historias/delete&id=4
+HTTP_REFERER=http://localhost/Ebooky/index.php?r=historias/admin
+---
+2017/05/29 18:47:07 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php:20)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): ParrafospublicadosController->renderFile()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): ParrafospublicadosController->renderPartial()
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php(59): ParrafospublicadosController->render()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): ParrafospublicadosController->actionIndex()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): ParrafospublicadosController->runAction()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): ParrafospublicadosController->runActionWithFilters()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): ParrafospublicadosController->run()
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
+in F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php (20)
+in F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php (59)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 18:47:26 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php:20)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): ParrafospublicadosController->renderFile()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): ParrafospublicadosController->renderPartial()
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php(59): ParrafospublicadosController->render()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): ParrafospublicadosController->actionIndex()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): ParrafospublicadosController->runAction()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): ParrafospublicadosController->runActionWithFilters()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): ParrafospublicadosController->run()
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
+in F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php (20)
+in F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php (59)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 18:53:09 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php:20)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): ParrafospublicadosController->renderFile()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): ParrafospublicadosController->renderPartial()
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php(64): ParrafospublicadosController->render()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): ParrafospublicadosController->actionIndex()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): ParrafospublicadosController->runAction()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): ParrafospublicadosController->runActionWithFilters()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): ParrafospublicadosController->run()
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
+in F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php (20)
+in F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php (64)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 18:57:26 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php:20)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): ParrafospublicadosController->renderFile()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): ParrafospublicadosController->renderPartial()
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php(63): ParrafospublicadosController->render()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): ParrafospublicadosController->actionIndex()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): ParrafospublicadosController->runAction()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): ParrafospublicadosController->runActionWithFilters()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): ParrafospublicadosController->run()
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
+in F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php (20)
+in F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php (63)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 18:57:27 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php:20)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): ParrafospublicadosController->renderFile()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): ParrafospublicadosController->renderPartial()
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php(63): ParrafospublicadosController->render()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): ParrafospublicadosController->actionIndex()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): ParrafospublicadosController->runAction()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): ParrafospublicadosController->runActionWithFilters()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): ParrafospublicadosController->run()
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
+in F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php (20)
+in F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php (63)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 18:57:27 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php:20)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): ParrafospublicadosController->renderFile()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): ParrafospublicadosController->renderPartial()
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php(63): ParrafospublicadosController->render()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): ParrafospublicadosController->actionIndex()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): ParrafospublicadosController->runAction()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): ParrafospublicadosController->runActionWithFilters()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): ParrafospublicadosController->run()
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
+in F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php (20)
+in F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php (63)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 18:57:27 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php:20)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): ParrafospublicadosController->renderFile()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): ParrafospublicadosController->renderPartial()
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php(63): ParrafospublicadosController->render()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): ParrafospublicadosController->actionIndex()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): ParrafospublicadosController->runAction()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): ParrafospublicadosController->runActionWithFilters()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): ParrafospublicadosController->run()
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
+in F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php (20)
+in F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php (63)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 18:57:27 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php:20)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): ParrafospublicadosController->renderFile()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): ParrafospublicadosController->renderPartial()
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php(63): ParrafospublicadosController->render()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): ParrafospublicadosController->actionIndex()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): ParrafospublicadosController->runAction()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): ParrafospublicadosController->runActionWithFilters()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): ParrafospublicadosController->run()
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
+in F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php (20)
+in F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php (63)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 18:57:28 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php:20)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): ParrafospublicadosController->renderFile()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): ParrafospublicadosController->renderPartial()
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php(63): ParrafospublicadosController->render()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): ParrafospublicadosController->actionIndex()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): ParrafospublicadosController->runAction()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): ParrafospublicadosController->runActionWithFilters()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): ParrafospublicadosController->run()
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
+in F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php (20)
+in F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php (63)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 18:57:28 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php:20)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): ParrafospublicadosController->renderFile()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): ParrafospublicadosController->renderPartial()
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php(63): ParrafospublicadosController->render()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): ParrafospublicadosController->actionIndex()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): ParrafospublicadosController->runAction()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): ParrafospublicadosController->runActionWithFilters()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): ParrafospublicadosController->run()
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
+in F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php (20)
+in F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php (63)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 18:58:00 [error] [php] Trying to get property of non-object (F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php:20)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(869): ParrafospublicadosController->renderFile()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(782): ParrafospublicadosController->renderPartial()
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php(63): ParrafospublicadosController->render()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): ParrafospublicadosController->actionIndex()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): ParrafospublicadosController->runAction()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): ParrafospublicadosController->runActionWithFilters()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): ParrafospublicadosController->run()
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
+in F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php (20)
+in F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php (63)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 19:19:42 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '>id AND id_historia = 3' at line 1. The SQL statement executed was: SELECT * FROM `usuario_ha_escrito_en` `t` WHERE id_usuario = 3->id AND id_historia = 3.
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (89)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 19:19:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '>id AND id_historia = 3' at line 1. The SQL statement executed was: SELECT * FROM `usuario_ha_escrito_en` `t` WHERE id_usuario = 3->id AND id_historia = 3' in F:\Xampp\yii-1.1.17.467ff50\framework\db\CDbCommand.php:543
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\db\ar\CActiveRecord.php(1356): CDbCommand->queryAll()
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#3 F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php(89): CActiveRecord->findAll(Object(CDbCriteria))
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): AccionesController->actionEscribir()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('escribir')
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('acciones/escrib...')
+#10 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Ebooky/index.php?r=acciones/escribir
+HTTP_REFERER=http://localhost/Ebooky/index.php?r=acciones/votar
+---
+2017/05/29 19:42:40 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `usuario_ha_escrito_en` (`id`, `id_historia`, `id_usuario`) VALUES (:yp0, :yp1, :yp2).
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (117)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 19:42:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `usuario_ha_escrito_en` (`id`, `id_historia`, `id_usuario`) VALUES (:yp0, :yp1, :yp2)' in F:\Xampp\yii-1.1.17.467ff50\framework\db\CDbCommand.php:358
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\db\ar\CActiveRecord.php(1080): CDbCommand->execute()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\db\ar\CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php(117): CActiveRecord->save()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): AccionesController->actionEscribir()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('escribir')
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('acciones/escrib...')
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Ebooky/index.php?r=acciones/escribir
+HTTP_REFERER=http://localhost/Ebooky/index.php?r=acciones/escribir
+---
+2017/05/29 19:44:43 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `usuario_ha_escrito_en` (`id`, `id_historia`, `id_usuario`) VALUES (:yp0, :yp1, :yp2).
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (170)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 19:44:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `usuario_ha_escrito_en` (`id`, `id_historia`, `id_usuario`) VALUES (:yp0, :yp1, :yp2)' in F:\Xampp\yii-1.1.17.467ff50\framework\db\CDbCommand.php:358
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\db\ar\CActiveRecord.php(1080): CDbCommand->execute()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\db\ar\CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php(170): CActiveRecord->save()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): AccionesController->actionVotar()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('votar')
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('acciones/votar')
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Ebooky/index.php?r=acciones/votar
+HTTP_REFERER=http://localhost/Ebooky/index.php?r=acciones/votar
+---
+2017/05/29 19:45:24 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `usuario_ha_votado_en` (`id`, `id_historia`, `id_usuario`) VALUES (:yp0, :yp1, :yp2).
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (170)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 19:45:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `usuario_ha_votado_en` (`id`, `id_historia`, `id_usuario`) VALUES (:yp0, :yp1, :yp2)' in F:\Xampp\yii-1.1.17.467ff50\framework\db\CDbCommand.php:358
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\db\ar\CActiveRecord.php(1080): CDbCommand->execute()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\db\ar\CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php(170): CActiveRecord->save()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): AccionesController->actionVotar()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('votar')
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('acciones/votar')
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Ebooky/index.php?r=acciones/votar
+HTTP_REFERER=http://localhost/Ebooky/index.php?r=acciones/votar
+---
+2017/05/29 19:48:50 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `usuario_ha_votado_en` (`id_historia`, `id_usuario`) VALUES (:yp0, :yp1).
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (170)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 19:48:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `usuario_ha_votado_en` (`id_historia`, `id_usuario`) VALUES (:yp0, :yp1)' in F:\Xampp\yii-1.1.17.467ff50\framework\db\CDbCommand.php:358
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\db\ar\CActiveRecord.php(1080): CDbCommand->execute()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\db\ar\CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php(170): CActiveRecord->save()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): AccionesController->actionVotar()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('votar')
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('acciones/votar')
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Ebooky/index.php?r=acciones/votar
+HTTP_REFERER=http://localhost/Ebooky/index.php?r=acciones/votar
+---
+2017/05/29 19:49:26 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `usuario_ha_votado_en` (`id_historia`, `id_usuario`) VALUES (:yp0, :yp1).
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (170)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/05/29 19:49:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `usuario_ha_votado_en` (`id_historia`, `id_usuario`) VALUES (:yp0, :yp1)' in F:\Xampp\yii-1.1.17.467ff50\framework\db\CDbCommand.php:358
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\db\ar\CActiveRecord.php(1080): CDbCommand->execute()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\db\ar\CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php(170): CActiveRecord->save()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): AccionesController->actionVotar()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('votar')
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('acciones/votar')
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Ebooky/index.php?r=acciones/votar
+HTTP_REFERER=http://localhost/Ebooky/index.php?r=acciones/votar
+---

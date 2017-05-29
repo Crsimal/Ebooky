@@ -21,5 +21,9 @@
 	<?php echo CHtml::encode($data->categoria); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('terminada')); ?>:</b>
+	<?php echo CHtml::encode($data->terminada); ?>
+	<br />
+
 
 </div>

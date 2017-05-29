@@ -43,6 +43,12 @@
 		<?php echo $form->error($model,'categoria'); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->labelEx($model,'terminada'); ?>
+		<?php echo $form->textField($model,'terminada'); ?>
+		<?php echo $form->error($model,'terminada'); ?>
+	</div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>
