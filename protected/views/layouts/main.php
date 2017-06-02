@@ -45,6 +45,7 @@
                             } else {
                                 echo "<li>Conectado como <strong>" . Yii::app()->user->name . "</strong></li>";
                                 echo "<li><a href='index.php?r=users/logout' class='waves-effect waves-light btn blue z-dept-5'>Desconectarse</a></li>";
+                                echo "<li><a href='index.php?r=users/panelusuario' class='waves-effect waves-light btn blue z-dept-5'>Modificar Datos</a></li>";
                             }
                             ?> 
                             

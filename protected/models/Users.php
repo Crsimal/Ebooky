@@ -50,7 +50,7 @@ class Users extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-                    'acciones'=>array(self::BELONGS_TO, 'acciones', 'id_usuario'),
+                   
 		);
 	}
 
@@ -67,6 +67,7 @@ class Users extends CActiveRecord
 			'city' => 'City',
 			'email' => 'Email',
 			'nickname' => 'Nickname',
+                        'historia_seleccionada' => 'historia_seleccionada',
 		);
 	}
 

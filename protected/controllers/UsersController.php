@@ -39,15 +39,10 @@ class UsersController extends Controller
                 $control_id=$control_id + 1;
                 
                 $model->id_usuario=$control_id;
+                $model->historia_seleccionada=1;
                 
                 
-                //Inicializamos datos en la tabla de acciones de usuario
-                $acciones=new Acciones;
-                $acciones->ha_escrito = 0;
-                $acciones->ha_participado = 1;
-                $acciones->ha_votado = 0;
-                $acciones->id_usuario = $control_id;;
-                $acciones->save();
+                
                 
 
         	if($model->validate())
@@ -90,6 +85,28 @@ class UsersController extends Controller
 	{
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
+	}
+        
+        public function actionPanelUsuario()
+	{
+            
+            
+                $users = new Users;
+                $usuario = $users->findByAttributes(array("nickname" => Yii::app()->user->name));
+                $user = Users::model()->findByPk($usuario->id_usuario);
+                
+                if(isset($_POST['Users'])){
+                    var_dump($_POST['Users']);
+                    $user->attributes=$_POST['Users'];
+                    $user->id_usuario=$usuario->id_usuario;
+                    $user->save();
+                    
+                    
+                    
+                }
+                
+                
+		$this->render('panelUsuario',array('users'=>$users));
 	}
 
 }

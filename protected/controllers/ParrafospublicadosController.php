@@ -2,12 +2,24 @@
 
 class ParrafospublicadosController extends Controller {
 
+    public function accessRules() {
+        return array(
+            array('allow', // allow all users to perform 'index' and 'view' actions
+                'actions' => array('index', 'view'),
+                'users' => array('admin'),
+            ),
+            array('deny', // deny all users
+                'users' => array('*'),
+            ),
+        );
+    }
+
     public function actionIndex() {
 
 
         //array donde se guardaran los parrafos con mas votos
         $arrayParrafosMaxVotados = array();
-        
+
         //recuperamos todas las historias
         $idhistorias = Historias::model()->findAll();
 
@@ -20,42 +32,44 @@ class ParrafospublicadosController extends Controller {
             $MaxVotos = 0;
             $parrafoMaxVotos = NULL;
 
-            if(!empty($parrafos)){
-            foreach ($parrafos as $votos) {
-                if ($votos->votos >= $MaxVotos) {
-                    $parrafoMaxVotos = $votos;
-                    $MaxVotos = $votos->votos;
+            if (!empty($parrafos)) {
+                foreach ($parrafos as $votos) {
+                    if ($votos->votos >= $MaxVotos) {
+
+                        $parrafoMaxVotos = $votos;
+                        $MaxVotos = $votos->votos;
+                    }
+                   
                 }
-            }
-            $arrayParrafosMaxVotados[] = $parrafoMaxVotos;
+                $arrayParrafosMaxVotados[] = $parrafoMaxVotos;
             }
         }
 
         //Si pulsamos el boton de añadir
         if (isset($_POST['añadir'])) {
-            
+
             //Funcion para añadir los daros a la tabla parrafos_publicados
             foreach ($arrayParrafosMaxVotados as $parrafoAñadir) {
                 $parrafospublicados = new ParrafosPublicados;
                 $criteria = new CDbCriteria;
-               
+
 
                 //guardamos los datos de la tabla parrafos_publicados
-           
+
                 $parrafospublicados->id_parrafo = $parrafoAñadir->id_parrafo;
                 $parrafospublicados->id_historia = $parrafoAñadir->id_historia;
                 $parrafospublicados->save();
             }
-            
-            
+
+
             $parrafosLimpiar = Parrafos::model()->findAllByAttributes(array('votacionActual' => 1));
-            foreach($parrafosLimpiar as $limpiar){
+            foreach ($parrafosLimpiar as $limpiar) {
                 $limpiar->votacionActual = 0;
                 $limpiar->publicado = 1;
                 $limpiar->save();
             }
             //$delete = UsuarioHaEscritoEn::model()->deleteAll();
-            
+
             $this->redirect(array('landing/index'));
         }
 
