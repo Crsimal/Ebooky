@@ -55,7 +55,7 @@
                             <li><a href="index.php?r=acciones/leer">Leer</a></li>
                             <li><a href="index.php?r=acciones/votar">Votar</a></li>
                             <li><a href="index.php?r=acciones/escribir">Escribir</a></li>
-                            <li><a href="index.php?r=about/index">About</a></li>
+                            <li><a href="index.php?r=about/comofunciona">About</a></li>
                             <hr>
                             <?php
                             if (Yii::app()->user->isGuest) {

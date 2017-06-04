@@ -6962,3 +6962,139 @@ Stack trace:
 #11 {main}
 REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
 ---
+2017/06/04 20:32:25 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '4' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `parrafos_publicados` (`id_parrafo`, `id_historia`) VALUES (:yp0, :yp1).
+in F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php (67)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/06/04 20:32:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '4' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `parrafos_publicados` (`id_parrafo`, `id_historia`) VALUES (:yp0, :yp1)' in F:\Xampp\yii-1.1.17.467ff50\framework\db\CDbCommand.php:358
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\db\ar\CActiveRecord.php(1080): CDbCommand->execute()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\db\ar\CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php(67): CActiveRecord->save()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): ParrafospublicadosController->actionIndex()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(291): CFilterChain->run()
+#11 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('')
+#13 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('parrafospublica...')
+#14 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
+HTTP_REFERER=http://localhost/Ebooky/index.php?r=parrafospublicados
+---
+2017/06/04 20:33:52 [warning] [application] Failed to set unsafe attribute "terminada" of "Historias".
+in F:\Xampp\htdocs\Ebooky\protected\controllers\HistoriasController.php (44)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/06/04 20:39:40 [error] [php] Undefined index: seleccioando (F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php:51)
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): AccionesController->runAction()
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): AccionesController->runActionWithFilters()
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): AccionesController->run()
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 F:\Xampp\htdocs\Ebooky\index.php(13): CWebApplication->run()
+REQUEST_URI=/Ebooky/index.php?r=acciones/seleccion
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (51)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/06/04 20:46:57 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in F:\Xampp\yii-1.1.17.467ff50\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(291): CFilterChain->run()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('')
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('historias')
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Ebooky/index.php?r=historias
+---
+2017/06/04 20:47:44 [warning] [application] Failed to set unsafe attribute "terminada" of "Historias".
+in F:\Xampp\htdocs\Ebooky\protected\controllers\HistoriasController.php (44)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/06/04 20:47:59 [warning] [application] Failed to set unsafe attribute "terminada" of "Historias".
+in F:\Xampp\htdocs\Ebooky\protected\controllers\HistoriasController.php (62)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/06/04 20:48:48 [warning] [application] Failed to set unsafe attribute "terminada" of "Historias".
+in F:\Xampp\htdocs\Ebooky\protected\controllers\HistoriasController.php (44)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/06/04 20:49:30 [warning] [application] Failed to set unsafe attribute "terminada" of "Historias".
+in F:\Xampp\htdocs\Ebooky\protected\controllers\HistoriasController.php (44)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/06/04 21:55:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php:483
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(270): CController->missingAction('index')
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('index')
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('about/index')
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Ebooky/index.php?r=about/index
+HTTP_REFERER=http://localhost/Ebooky/index.php?r=acciones/votar
+---
+2017/06/04 21:55:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php:483
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(270): CController->missingAction('index')
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('index')
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('about/index')
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Ebooky/index.php?r=about/index
+HTTP_REFERER=http://localhost/Ebooky/index.php?r=acciones/votar
+---
+2017/06/04 21:56:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php:483
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(270): CController->missingAction('index')
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('index')
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('about/index')
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Ebooky/index.php?r=about/index
+HTTP_REFERER=http://localhost/Ebooky/index.php?r=about/comofunciona
+---
+2017/06/04 22:28:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index.php?r=acciones/escribir".' in F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('index.php?r=acc...')
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Ebooky/index.php?r=index.php?r=acciones/escribir
+HTTP_REFERER=http://localhost/Ebooky/index.php?r=about/comofunciona
+---
+2017/06/04 22:29:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index.php?r=acciones/escribir".' in F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('index.php?r=acc...')
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Ebooky/index.php?r=index.php?r=acciones/escribir
+HTTP_REFERER=http://localhost/Ebooky/index.php?r=about/comofunciona
+---
+2017/06/04 22:29:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index.php?r=acciones/votar".' in F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('index.php?r=acc...')
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Ebooky/index.php?r=index.php?r=acciones/votar
+HTTP_REFERER=http://localhost/Ebooky/index.php?r=about/comofunciona
+---
+2017/06/04 22:29:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index.php?r=acciones/leer".' in F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('index.php?r=acc...')
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Ebooky/index.php?r=index.php?r=acciones/leer
+HTTP_REFERER=http://localhost/Ebooky/index.php?r=about/comofunciona
+---

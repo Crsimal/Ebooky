@@ -47,8 +47,12 @@ class AccionesController extends Controller {
                 $usuarios = new Users;
                 $usuario = $usuarios->findByAttributes(array("nickname" => Yii::app()->user->name));
                 $usuario->historia_seleccionada = $_POST['seleccionado'];
-                $usuario->save();
-                $this->redirect(array('landing/index'));
+                
+                $usuario->update();
+                
+                
+
+               $this->redirect(array('landing/index'));
             } else {
                 //Si no se han hecho acciones mostramos la página de seleccionar historia
                 $this->render('seleccion', array('model' => $model));
