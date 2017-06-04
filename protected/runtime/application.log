@@ -6898,3 +6898,67 @@ Stack trace:
 REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
 HTTP_REFERER=http://localhost/Ebooky/index.php?r=parrafospublicados
 ---
+2017/06/04 20:10:16 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in F:\Xampp\yii-1.1.17.467ff50\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(291): CFilterChain->run()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('')
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('historias')
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Ebooky/index.php?r=historias
+---
+2017/06/04 20:20:18 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in F:\Xampp\yii-1.1.17.467ff50\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(291): CFilterChain->run()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('historias/admin')
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Ebooky/index.php?r=historias/admin
+---
+2017/06/04 20:20:23 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in F:\Xampp\yii-1.1.17.467ff50\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(291): CFilterChain->run()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('parrafos/admin')
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Ebooky/index.php?r=parrafos/admin
+---
+2017/06/04 20:22:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in F:\Xampp\yii-1.1.17.467ff50\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(291): CFilterChain->run()
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('')
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('parrafospublica...')
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
+---
