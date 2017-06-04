@@ -45,12 +45,12 @@ class UsersController extends Controller
                 
                 
 
-        	if($model->validate())
-        	{
-            	if($model->save())
-            	{
-            		$this->redirect(array('users/login'));
-            	}
+        	if($model->validate()){
+                    
+                        if($model->save()){
+                            $this->redirect(array('users/login'));
+                    }
+                    
             	return;
         	}
     	}

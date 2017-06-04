@@ -36,9 +36,16 @@
 
         <div class="row">
             <?php echo $form->labelEx($model, 'Password'); ?>
-            <?php echo $form->textField($model, 'password'); ?>
+            <?php echo $form->passwordField($model, 'password'); ?>
             <?php echo $form->error($model, 'password'); ?>
         </div>
+        <div class="row">
+            <?php echo $form->labelEx($model, 'Repite Password'); ?>
+            <?php echo $form->passwordField($model, 'repeatpassword'); ?>
+            <?php echo $form->error($model, 'repeatpassword'); ?>
+        </div>
+
+        
 
         <div class="row">
             <?php echo $form->labelEx($model, 'Ciudad'); ?>
@@ -51,7 +58,7 @@
             <?php echo $form->textField($model, 'email'); ?>
             <?php echo $form->error($model, 'email'); ?>
         </div>
-        
+
 
 
 
