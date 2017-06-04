@@ -6238,3 +6238,24 @@ REQUEST_URI=/Ebooky/index.php?r=parrafospublicados
 in F:\Xampp\htdocs\Ebooky\protected\views\parrafospublicados\index.php (15)
 in F:\Xampp\htdocs\Ebooky\protected\controllers\ParrafospublicadosController.php (83)
 in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/06/04 16:31:30 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ha_participado = 0' at line 1. The SQL statement executed was: SELECT * FROM `usuario_ha_escrito_en` `t` WHERE id_usuario = 6 AND id_historia = 1 ha_participado = 0.
+in F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php (80)
+in F:\Xampp\htdocs\Ebooky\index.php (13)
+2017/06/04 16:31:30 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ha_participado = 0' at line 1. The SQL statement executed was: SELECT * FROM `usuario_ha_escrito_en` `t` WHERE id_usuario = 6 AND id_historia = 1 ha_participado = 0' in F:\Xampp\yii-1.1.17.467ff50\framework\db\CDbCommand.php:543
+Stack trace:
+#0 F:\Xampp\yii-1.1.17.467ff50\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 F:\Xampp\yii-1.1.17.467ff50\framework\db\ar\CActiveRecord.php(1356): CDbCommand->queryAll()
+#2 F:\Xampp\yii-1.1.17.467ff50\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#3 F:\Xampp\htdocs\Ebooky\protected\controllers\AccionesController.php(80): CActiveRecord->findAll(Object(CDbCriteria))
+#4 F:\Xampp\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): AccionesController->actionEscribir()
+#5 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 F:\Xampp\yii-1.1.17.467ff50\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('escribir')
+#9 F:\Xampp\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('acciones/escrib...')
+#10 F:\Xampp\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 F:\Xampp\htdocs\Ebooky\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Ebooky/index.php?r=acciones/escribir
+HTTP_REFERER=http://localhost/Ebooky/
+---

@@ -74,10 +74,19 @@ class AccionesController extends Controller {
         //Si esta conectado
         else {
 
+            $criteria = new CDbCriteria;
+            $criteria->condition = "id_usuario = $usuario->id_usuario AND id_historia = $usuario->historia_seleccionada AND publicado = 1";
+            $haParticipado = Parrafos::model()->findAll($criteria);
+
             //Llamamos a la tabla UsuarioHaEscritoEn para saber si el usuario ya ha escrito en esta historia
             $criteria = new CDbCriteria;
             $criteria->condition = "id_usuario = $usuario->id_usuario AND id_historia = $usuario->historia_seleccionada";
             $models = UsuarioHaEscritoEn::model()->findAll($criteria);
+
+            //Si ya ha participado
+            if (!empty($haParticipado)) {
+                $this->render('yaParticipado', array('palabraAccion' => 'escrito'));
+            }
 
             //Si ya ha escrito 
             if (!empty($models)) {
@@ -86,14 +95,14 @@ class AccionesController extends Controller {
             //Si no ha escrito
             else {
                 if (isset($_POST['parrafo'])) {
-                    
+
                     //ID incremental, PENDIENTE MEJORAR
                     $criteria = new CDbCriteria;
                     $criteria->select = 'max(id_parrafo) AS id_parrafo';
                     $row = $model->model()->find($criteria);
                     $somevariable = $row['id_parrafo'];
                     $somevariable = $somevariable + 1;
-                    
+
                     //Guardamos los datos del párrafo
                     $model->contenido = $_POST['parrafo'];
                     $model->id_usuario = $usuario->id_usuario;
@@ -101,15 +110,16 @@ class AccionesController extends Controller {
                     $model->votos = 0;
                     $model->votacionActual = 1;
                     $model->publicado = 0;
-                    $model->id_historia = $usuario->historia_seleccionada;    
+                    $model->id_historia = $usuario->historia_seleccionada;
                     $model->save();
-     
+
                     //Cuando el usuario escribe se añade un registro a la tabla de control de escritura
                     $usuarioHaEscritoEn = new UsuarioHaEscritoEn;
 
                     //Guardamos el usuario y la historia
                     $usuarioHaEscritoEn->id_historia = $usuario->historia_seleccionada;
                     $usuarioHaEscritoEn->id_usuario = $usuario->id_usuario;
+
 
                     //ID incremental, PENDIENTE MEJORAR
                     $criteria = new CDbCriteria;
@@ -145,7 +155,7 @@ class AccionesController extends Controller {
         //si no esta conectado restringimos el acceso
         if (Yii::app()->user->isGuest) {
             $this->render('accesoRestringido');
-        //si esta conectado
+            //si esta conectado
         } else {
 
             //consultamos la tabla para comprobar si ha votado en esta historia
@@ -156,7 +166,7 @@ class AccionesController extends Controller {
             //Si ya ha votaado
             if (!empty($models)) {
                 $this->render('yaEscrito', array('palabraAccion' => 'votado'));
-            //Si no ha votado
+                //Si no ha votado
             } else {
                 //Si pulsa el voton de votar
                 if (isset($_POST['votado'])) {
@@ -164,7 +174,7 @@ class AccionesController extends Controller {
                     $parrafo = $model->findByAttributes(array("id_parrafo" => $_POST['votado']));
                     $sumaVoto = $parrafo->votos + 1;
                     $parrafo->votos = $sumaVoto;
-                    $parrafo->save();                                   
+                    $parrafo->save();
 
                     //modificamos la tabla de acciones de usuario indicando que ya ha votado
                     $usuarios = new Users();
@@ -190,6 +200,10 @@ class AccionesController extends Controller {
 
 
                     $this->redirect(array('landing/index'));
+                } else if (isset($_POST['eliminar'])) {
+                    $borrar = $model->findByPk($_POST['eliminar']); // asumiendo que existe un post cuyo ID es 10
+                    $borrar->delete();
+                    $this->render('votar', array('model' => $model, 'usuario' => $usuario));
                 } else {
                     $this->render('votar', array('model' => $model, 'usuario' => $usuario));
                 }

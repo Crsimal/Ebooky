@@ -26,17 +26,23 @@ foreach ($parrafos as $parrafo) {
 
             <form method="post">
 
-                <input type="hidden" name="votado" value="<?php echo $parrafo->id_parrafo; ?>">
+                
                 <div class="row buttons center">
                     <?php
                     
                     if($parrafo->id_usuario != $usuario->id_usuario){
                     
                     ?>
+                    <input type="hidden" name="votado" value="<?php echo $parrafo->id_parrafo; ?>">
                     <button class="btn waves-effect waves-light" type="submit" name="action">Votar</button>   
                     <?php
                 }else{
-                    echo "<strong>No puedes votar tu propio párrafo</strong>";
+                    ?>
+                    <br><br><strong>No puedes votar tu propio párrafo, si lo eliminar podrás enviar uno nuevo.</strong><br><br>
+                    <input type="hidden" name="eliminar" value="<?php echo $parrafo->id_parrafo; ?>">
+                    <button class='btn waves-effect waves-light' type='submit' name='action'>Eliminar</button> 
+                    
+                    <?php
                 }
                 ?>
             </div>
