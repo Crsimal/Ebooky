@@ -4,6 +4,7 @@
 $this->pageTitle = Yii::app()->name;
 ?>
 
+<!--Manual de usuario - Página COMO FUNCIONA -->
 <div class="container" >
 
     <div class="row" id="about">

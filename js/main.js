@@ -3,9 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-
  $(".button-collapse").sideNav();
  
-  $('.tooltipped').tooltip('remove');
+ $('.tooltipped').tooltip('remove');
   

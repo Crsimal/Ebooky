@@ -86,7 +86,7 @@ class AccionesController extends Controller {
             //Si ya ha participado
             if (!empty($haParticipado)) {
                 $this->render('yaParticipado', array('palabraAccion' => 'escrito'));
-            }
+            } else{
 
             //Si ya ha escrito 
             if (!empty($models)) {
@@ -141,6 +141,7 @@ class AccionesController extends Controller {
                 }
             }
         }
+    }
     }
 
     public function actionVotar() {
@@ -197,10 +198,10 @@ class AccionesController extends Controller {
 
                     $usuarioHaVotadoEn->save();
 
-
-
                     $this->redirect(array('landing/index'));
-                } else if (isset($_POST['eliminar'])) {
+                } 
+                //Si se pulsa el botón de eliminar borramos el párrafo
+                else if (isset($_POST['eliminar'])) {
                     $borrar = $model->findByPk($_POST['eliminar']); // asumiendo que existe un post cuyo ID es 10
                     $borrar->delete();
                     $this->render('votar', array('model' => $model, 'usuario' => $usuario));

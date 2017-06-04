@@ -3,6 +3,8 @@
 
 $this->pageTitle = Yii::app()->name;
 ?>
+
+<!--Vista enviar párrafo -->
 <script type="text/javascript" src="<?php echo Yii::app()->baseUrl . '/js/main.js'; ?>"></script>
 <div class="col s4 center paddingTop50">
     <img src="<?php echo Yii::app()->baseUrl . '/images'; ?>/escribir.png" alt=""/>

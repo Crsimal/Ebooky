@@ -6,13 +6,15 @@ $historias = $model->findAll();
 
 
 ?>
-
+<!--VISTA SELECCIONAR PARRAFO -->
 <div class="col s4 center paddingTop50">
     <img src="<?php echo Yii::app()->baseUrl . '/images'; ?>/seleccion.png" alt="book"/>
 </div>
 <div class=''>      
 
-    <?php foreach ($historias as $historia) { ?>
+    <?php 
+    //Mostramos tantos botones de seleccionar historia como historias existan
+    foreach ($historias as $historia) { ?>
 
         <form method="post">
 

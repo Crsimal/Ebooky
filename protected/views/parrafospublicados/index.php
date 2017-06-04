@@ -5,6 +5,7 @@ $this->breadcrumbs = array(
     'Parrafospublicados',
 );
 
+//Mostramos el párrafo más votado de cada historia
 foreach ($arrayParrafosMaxVotados as $parra) {
     ?>
 

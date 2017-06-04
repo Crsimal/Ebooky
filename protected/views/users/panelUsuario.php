@@ -9,6 +9,8 @@
         // you need to use the performAjaxValidation()-method described there.
         'enableAjaxValidation' => false,
     ));
+    
+    $usuario = $users->findByAttributes(array("nickname" => Yii::app()->user->name));
     ?>
 
 
@@ -62,5 +64,12 @@
     </div>
 
     <?php $this->endWidget(); ?>
+    <form method="POST">
+        <div class="row buttons center">
+            <input type="hidden" name="eliminar" value="<?php echo $usuario->id_usuario; ?>">
+            <button class="btn waves-effect waves-light" type="submit" name="elimina">Eliminar Usuario
+            </button>
+        </div>
+    </form>
 
 </div><!-- form -->

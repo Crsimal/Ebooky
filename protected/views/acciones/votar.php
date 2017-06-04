@@ -3,7 +3,7 @@
 
 $this->pageTitle = Yii::app()->name;
 ?>
-
+<!-- VISTA VOTAR PÁRRAFOS -->
 <div class="col s4 paddingTop50 center ">
     <img src="<?php echo Yii::app()->baseUrl . '/images'; ?>/votar.png" alt=""/>
 </div>
@@ -12,9 +12,10 @@ $this->pageTitle = Yii::app()->name;
 <?php
 /* @var $this SiteController */
 
+//Recuperamos todos los párrafos de la historia seleccionada
 $parrafos = $model->findAllByAttributes(array("id_historia" => $usuario->historia_seleccionada));
-//$parrafos = $model->findAll();
 
+//Mostramos un formulario de votacion por cada párrafo
 foreach ($parrafos as $parrafo) {
     if ($parrafo->votacionActual == 1) {
         ?>

@@ -1,3 +1,10 @@
+<!-- --------------------------------------- -->
+<!-- --------------------------------------- -->
+<!-- PAGINA PRINCIPAL -->
+<!-- --------------------------------------- -->
+<!-- --------------------------------------- -->
+
+
 <?php
 /* @var $this SiteController */
 
@@ -5,12 +12,12 @@ $this->pageTitle = Yii::app()->name;
 
 
 if (!Yii::app()->user->isGuest) {
+    
+    //Recuperamos la historia seleccionada
     $usuarios = new Users;
     $usuario = $usuarios->findByAttributes(array("nickname" => Yii::app()->user->name));
     $historia = $usuario->historia_seleccionada;
-
     $historias = new Historias();
-
     $seleccion = $historias->findByPk($historia);
     ?>
 
@@ -33,9 +40,6 @@ if (!Yii::app()->user->isGuest) {
 }
 ?>
 <hr>
-
-
-
 
 <div class="row center-align menuContainer center" >
     <div class="col s12 m4">

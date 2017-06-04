@@ -40,11 +40,6 @@ $this->breadcrumbs = array(
             <?php echo $form->error($model, 'password'); ?>
         </div>
 
-        <div class="row rememberMe">
-            <?php echo $form->checkBox($model, 'rememberMe'); ?>
-            <?php echo $form->label($model, 'Recordarme'); ?>
-            <?php echo $form->error($model, 'rememberMe'); ?>
-        </div>
         </br>
         <div class="row buttons center">
             <button class="btn waves-effect waves-light" type="submit" name="action">Conectarse

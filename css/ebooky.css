@@ -2,25 +2,33 @@
     width: 80%;
 }
 
+/** Nota del panel de usuario */
+.nota{
+   padding: 20px 50px 20px 50px;
 
+}
+
+/** Logo superior */
 #logo{
     width: 100%;
     height: auto;
     max-width: 160px;
 }
 
-
+/** Nota del panel de usuario */
 #historia{
     background-color: white;
     color: black;
     width: 75%;
-    height: 1500px;
+    min-height: 800px;
+    height: auto;
     margin-top: 100px;
     padding-top: 80px;
     padding-left: 100px;
     padding-right: 100px;
 }
 
+/** Caja de votacion */
 .parrafoVotacion{
     background-color: white;
     color: black;
@@ -56,12 +64,8 @@
     margin-top: 50px;
 }
 
-#navegacion{
- /*  font-family: 'Baloo Bhaina'; */
-}
 
 .menuContainer{
-    /*  font-family: 'Baloo Bhaina';*/
      color: grey;
      font-size: 20px;
      text-align: center;
@@ -69,7 +73,7 @@
 }
 
 .maxImage {
-     width: 100%;
+    width: 100%;
     height: auto;
     max-width: 160px;
 }
@@ -77,3 +81,4 @@
 .parrafosRestantes{
     margin: 0 auto;
 }
+

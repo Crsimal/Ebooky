@@ -6,6 +6,8 @@
  * and open the template in the editor.
  */
 ?>
+
+<!--Vista acceso restringido -->
 <div class=" center">
          <img src="<?php echo Yii::app()->baseUrl.'/images';?>/login.png" alt="book"/>
       </div>

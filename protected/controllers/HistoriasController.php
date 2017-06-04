@@ -8,18 +8,18 @@ class HistoriasController extends Controller
 	public function filters()
 	{
 		return array(
-			'accessControl', // Control de acceso 
+			'accessControl',
 		);
 	}
 
 	public function accessRules()
 	{
 		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
+			array('allow', 
 				'actions'=>array('index','view','create','update','admin','delete'),
 				'users'=>array('admin'),
 			),
-			array('deny',  // deny all users
+			array('deny',  
 				'users'=>array('*'),
 			),
 		);
@@ -33,6 +33,7 @@ class HistoriasController extends Controller
 		));
 	}
 
+        //Creacion de historia
 	public function actionCreate()
 	{
 		$model=new Historias;
@@ -50,22 +51,25 @@ class HistoriasController extends Controller
 		));
 	}
 
+        //Actualizat historia
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
 
+                //Si rellenamos el formulario
 		if(isset($_POST['Historias']))
 		{
 			$model->attributes=$_POST['Historias'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id_historia));
 		}
-
+                //Llamamos a la vista del formulario de actualizar
 		$this->render('update',array(
 			'model'=>$model,
 		));
 	}
 
+        //Borrar historia
 	public function actionDelete($id)
 	{
 		$this->loadModel($id)->delete();
@@ -94,6 +98,7 @@ class HistoriasController extends Controller
 		));
 	}
 
+        //Funcion para recoger la historia mediante el id
 	public function loadModel($id)
 	{
 		$model=Historias::model()->findByPk($id);
